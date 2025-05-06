@@ -1,45 +1,49 @@
-name: .NET CI for ATMApp
+name: CI/CD Pipeline for ATMApp
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [main]
   pull_request:
-    branches: [ "main" ]
+    branches: [main]
 
 jobs:
-  build-and-test:
+  build-test:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
-    - name: Setup .NET
+    - name: Setup .NET 9 Preview
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.0.x
+        dotnet-version: 9.0.x
+        include-prerelease: true
 
-    - name: Restore dependencies
-      run: dotnet restore ATMApp.sln
-      working-directory: finalcs509
+    - name: Install dependencies
+      run: dotnet restore finalcs509/ATMApp.sln
 
-    - name: Run StyleCop Analyzers
-      run: dotnet build ATMApp.sln -warnaserror
-      working-directory: finalcs509
+    - name: Run StyleCopAnalyzers
+      run: dotnet build finalcs509/ATMApp.sln -c Release /warnaserror
 
-    - name: Build Debug
-      run: dotnet build ATMApp.sln --configuration Debug --no-restore
-      working-directory: finalcs509
+    - name: Build (Debug)
+      run: dotnet build finalcs509/ATMApp.sln -c Debug
 
-    - name: Build Release
-      run: dotnet build ATMApp.sln --configuration Release --no-restore
-      working-directory: finalcs509
+    - name: Run Tests with Coverage
+      run: dotnet test finalcs509/ATMApp.sln --collect:"XPlat Code Coverage"
 
-    - name: Run Tests
-      run: dotnet test ATMApp.Tests/ATMApp.Tests.csproj --no-build --verbosity normal
-      working-directory: finalcs509
+    - name: Generate Code Coverage Report
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.26
+      with:
+        reports: '**/coverage.cobertura.xml'
+        targetdir: 'coverage-report'
+        reporttypes: 'HtmlInline_AzurePipelines'
 
-    - name: (Optional) Generate Documentation
-      run: echo "📝 Add docgen command here (e.g. DocFX, Sandcastle, etc.)"
-      working-directory: finalcs509
+    - name: Upload Coverage Report Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: code-coverage-report
+        path: coverage-report
 
+    - name: Build Documentation (optional)
+      run: echo "Generate docs here (e.g. with Sandcastle, DocFX, etc.)"
