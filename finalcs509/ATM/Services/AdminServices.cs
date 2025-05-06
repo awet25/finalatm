@@ -29,9 +29,11 @@ namespace ATMApp.Services
             this.accountRepository = accountRepository;
             this.transactionRepository = transactionRepository;
         }
-          /// <summary>
-/// This methode will add user in AdminSerivce.cs
-/// </summary>
+
+        /// <summary>
+        /// This methode will add user in AdminSerivce.cs.
+        /// </summary>
+        /// <returns><placeholder>A <see cref="Task"/> representing the asynchronous operation.</placeholder></returns>
         public async Task<bool> AddUser(CreateUserDto userDto)
         {
             var validationResult = this.userValidator.Validate(userDto);
@@ -91,9 +93,11 @@ namespace ATMApp.Services
 
             return false;
         }
-               /// <summary>
-/// This methode will Delete User and their account
-/// </summary>
+
+        /// <summary>
+        /// This methode will Delete User and their account.
+        /// </summary>
+        /// <returns><placeholder>A <see cref="Task"/> representing the asynchronous operation.</placeholder></returns>
         public async Task<bool> DeleteUserAndAccount(int accountId, string confirmationInput)
         {
             using var transaction = await this.context.Database.BeginTransactionAsync();
@@ -144,9 +148,11 @@ namespace ATMApp.Services
                 return false;
             }
         }
-           /// <summary>
-/// This methode will return  a User after we add the user to the database
-/// </summary>
+
+        /// <summary>
+        /// This methode will return  a User after we add the user to the database.
+        /// </summary>
+        /// <returns><placeholder>A <see cref="Task"/> representing the asynchronous operation.</placeholder></returns>
         public async Task<Account> GetAccount(int id)
         {
             var existingAccount = await this.context.Account.Include(a => a.User)
@@ -159,9 +165,11 @@ namespace ATMApp.Services
 
             return existingAccount;
         }
-          /// <summary>
-/// This methode will return  a User by Login in AdminService
-/// </summary>
+
+        /// <summary>
+        /// This methode will return  a User by Login in AdminService.
+        /// </summary>
+        /// <returns><placeholder>A <see cref="Task"/> representing the asynchronous operation.</placeholder></returns>
         public async Task<User> GetUserByLogin(string login)
         {
             // var existingUser=  await _context.User.Include(u=>u.Account)
@@ -180,9 +188,11 @@ namespace ATMApp.Services
 
             return user;
         }
-              /// <summary>
-/// This methode will a bool after  updating a User in AdminService
-/// </summary>
+
+        /// <summary>
+        /// This methode will a bool after  updating a User in AdminService.
+        /// </summary>
+        /// <returns><placeholder>A <see cref="Task"/> representing the asynchronous operation.</placeholder></returns>
         public async Task<bool> UpdateUser(UpdateUserDto updateUserDto)
         {
             using var transaction = await this.context.Database.BeginTransactionAsync();

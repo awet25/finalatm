@@ -65,9 +65,11 @@ namespace ATMApp.Views
                 }
             }
         }
-             /// <summary>
-/// Will create a User.
-/// </summary>
+
+        /// <summary>
+        /// Will create a User.
+        /// </summary>
+        /// <returns><placeholder>A <see cref="Task"/> representing the asynchronous operation.</placeholder></returns>
         public async Task<bool> CreateUser()
         {
             CreateUserDto newuser = HandleCreateUserInput();
@@ -94,9 +96,11 @@ namespace ATMApp.Views
             UpdateUserDto updateduser = HandleInputToUpudate();
             return await this.adminServices.UpdateUser(updateduser);
         }
-         /// <summary>
-/// search for account.
-/// </summary>
+
+        /// <summary>
+        /// search for account.
+        /// </summary>
+        /// <returns><placeholder>A <see cref="Task"/> representing the asynchronous operation.</placeholder></returns>
         public async Task SearchForAccount()
         {
             Console.WriteLine("Enter Account ID to look for account ");
@@ -122,9 +126,10 @@ namespace ATMApp.Views
             Console.WriteLine($"Login: {account.User.Login}");
             Console.WriteLine($"Pin Code: {account.User.PinCode}");
         }
+
         /// <summary>
-/// Exit the program.
-/// </summary>
+        /// Exit the program.
+        /// </summary>
         public void Exit()
         {
             Console.WriteLine("Exiting Admin menu...");

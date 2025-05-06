@@ -21,9 +21,11 @@ namespace ATMApp.Services
             this.userRepository = userRepository;
             this.validator = validator;
         }
-             /// <summary>
-/// This methode will login our users
-/// </summary>
+
+        /// <summary>
+        /// This methode will login our users.
+        /// </summary>
+        /// <returns><placeholder>A <see cref="Task"/> representing the asynchronous operation.</placeholder></returns>
         public async Task<User> Login(UserLoginDTO userLogin)
         {
             var validationResult = this.validator.Validate(userLogin);
@@ -45,9 +47,10 @@ namespace ATMApp.Services
 
             return null;
         }
-          /// <summary>
-/// This methode will close the program
-/// </summary>
+
+        /// <summary>
+        /// This methode will close the program.
+        /// </summary>
         public void Exit()
         {
             Console.WriteLine("User Logged out.");

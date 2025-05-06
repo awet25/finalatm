@@ -18,9 +18,11 @@ namespace ATMApp.Services
             this.accountRepository = accountRepository;
             this.transactionRepository = transactionRepository;
         }
-              /// <summary>
-/// This methode will return  a bool after a client try to deposite money.
-/// </summary>
+
+        /// <summary>
+        /// This methode will return  a bool after a client try to deposite money.
+        /// </summary>
+        /// <returns><placeholder>A <see cref="Task"/> representing the asynchronous operation.</placeholder></returns>
         public async Task<bool> Deposit(int clientId, decimal amount)
         {
             if (amount <= 0)
@@ -61,9 +63,11 @@ namespace ATMApp.Services
 
             return true;
         }
-             /// <summary>
-/// This methode will return  will display the current balance of the account.
-/// </summary>
+
+        /// <summary>
+        /// This methode will return  will display the current balance of the account.
+        /// </summary>
+        /// <returns><placeholder>A <see cref="Task"/> representing the asynchronous operation.</placeholder></returns>
         public async Task GetBalance(int clientId)
         {
             var account = await this.accountRepository.GetAccountByClientID(clientId);
@@ -84,16 +88,20 @@ namespace ATMApp.Services
                 Console.WriteLine($"Balance :{account.IntialBalance:F2}");
             }
         }
-            /// <summary>
-/// This methode will return a list of transactions  done by User using accountId
-/// </summary>
+
+        /// <summary>
+        /// This methode will return a list of transactions  done by User using accountId.
+        /// </summary>
+        /// <returns><placeholder>A <see cref="Task"/> representing the asynchronous operation.</placeholder></returns>
         public async Task<List<Transaction>> GetTransactionHistory(int accountId)
         {
             return await this.transactionRepository.GetTransactionsByAccountId(accountId);
         }
-             /// <summary>
-/// This methode will allow the client to withdraw money
-/// </summary>
+
+        /// <summary>
+        /// This methode will allow the client to withdraw money.
+        /// </summary>
+        /// <returns><placeholder>A <see cref="Task"/> representing the asynchronous operation.</placeholder></returns>
         public async Task<bool> Withdraw(int clientID, decimal amount)
         {
             var account = await this.accountRepository.GetAccountByClientID(clientID);

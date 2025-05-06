@@ -1,21 +1,6 @@
 // <copyright file="Program.cs" company="PlaceholderCompany">
 // Copyright (c) PlaceholderCompany. All rights reserved.
 // </copyright>
-// service.AddScoped<IAuthService, AuthService>();
-//                 service.AddScoped<IUserRepository, UserRepository>();
-//                 service.AddScoped<IAccountRepository, AccountRepository>();
-//                 service.AddScoped<ITransactionRepository, TransactionRepository>();
-//                 service.AddScoped<IClientService, ClientService>();
-//                 service.AddValidatorsFromAssemblyContaining<AddNewuserValidator>();
-//                 service.AddScoped<IValidator<CreateUserDto>, AddNewuserValidator>();
-//                 service.AddScoped<IAdminservices, AdminServices>();
-//                 service.AddScoped<AdminView>(provider =>
-// {
-//     var adminServices = provider.GetRequiredService<IAdminservices>();
-//     var authService = provider.GetRequiredService<IAuthService>();
-//     return new AdminView(adminServices, authService, Console.ReadLine);
-// });
-
 // service.AddScoped<ClientView>(
 //                     provider =>
 // {
