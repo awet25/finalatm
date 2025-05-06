@@ -6,7 +6,7 @@ namespace ATMApp.DTOs
 {
     using ATMApp.Models;
 
-    public class UpdateUserDto : BaseDto
+    public class UpdateUserDto
     {
         public int Id { get; set; }
 

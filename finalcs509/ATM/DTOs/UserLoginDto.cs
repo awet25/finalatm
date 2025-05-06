@@ -6,8 +6,8 @@ namespace ATMApp.DTOs
 {
     public class UserLoginDTO
     {
-        public string Login { get; set; }
+        public required string Login { get; set; }
 
-        public string PinCode { get; set; }
+        public required string PinCode { get; set; }
     }
 }
