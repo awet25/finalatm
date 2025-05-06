@@ -1,13 +1,13 @@
-name: CI/CD Pipeline
+name: .NET CI for ATMApp
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
 
 jobs:
-  build-test-doc:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,30 +15,31 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Setup .NET
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.x'  # or 9.x if you're on .NET 9
+        dotnet-version: 8.0.x
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ATMApp.sln
+      working-directory: finalcs509
 
-    - name: Run StyleCopAnalyzers
-      run: dotnet build --no-restore /warnaserror
+    - name: Run StyleCop Analyzers
+      run: dotnet build ATMApp.sln -warnaserror
+      working-directory: finalcs509
 
     - name: Build Debug
-      run: dotnet build --configuration Debug --no-restore
+      run: dotnet build ATMApp.sln --configuration Debug --no-restore
+      working-directory: finalcs509
 
     - name: Build Release
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build ATMApp.sln --configuration Release --no-restore
+      working-directory: finalcs509
 
     - name: Run Tests
-      run: dotnet test --no-build --verbosity normal --logger "trx;LogFileName=test_results.trx"
+      run: dotnet test ATMApp.Tests/ATMApp.Tests.csproj --no-build --verbosity normal
+      working-directory: finalcs509
 
-    - name: Generate Documentation
-      run: docfx docfx.json
+    - name: (Optional) Generate Documentation
+      run: echo "📝 Add docgen command here (e.g. DocFX, Sandcastle, etc.)"
+      working-directory: finalcs509
 
-    - name: Upload Docs Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: atm-docs
-        path: _site
