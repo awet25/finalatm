@@ -1,0 +1,714 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Services.AuthService
+  commentId: T:ATMApp.Services.AuthService
+  id: AuthService
+  parent: ATMApp.Services
+  children:
+  - ATMApp.Services.AuthService.#ctor(ATMApp.Repositories.IUserRepository,FluentValidation.IValidator{ATMApp.DTOs.UserLoginDTO})
+  - ATMApp.Services.AuthService.Exit
+  - ATMApp.Services.AuthService.Login(ATMApp.DTOs.UserLoginDTO)
+  langs:
+  - csharp
+  - vb
+  name: AuthService
+  nameWithType: AuthService
+  fullName: ATMApp.Services.AuthService
+  type: Class
+  source:
+    remote:
+      path: Services/AuthService.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: AuthService
+    path: ATM/Services/AuthService.cs
+    startLine: 13
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Services
+  syntax:
+    content: 'public class AuthService : IAuthService'
+    content.vb: Public Class AuthService Implements IAuthService
+  inheritance:
+  - System.Object
+  implements:
+  - ATMApp.Interfaces.IAuthService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ATMApp.Services.AuthService.#ctor(ATMApp.Repositories.IUserRepository,FluentValidation.IValidator{ATMApp.DTOs.UserLoginDTO})
+  commentId: M:ATMApp.Services.AuthService.#ctor(ATMApp.Repositories.IUserRepository,FluentValidation.IValidator{ATMApp.DTOs.UserLoginDTO})
+  id: '#ctor(ATMApp.Repositories.IUserRepository,FluentValidation.IValidator{ATMApp.DTOs.UserLoginDTO})'
+  parent: ATMApp.Services.AuthService
+  langs:
+  - csharp
+  - vb
+  name: AuthService(IUserRepository, IValidator<UserLoginDTO>)
+  nameWithType: AuthService.AuthService(IUserRepository, IValidator<UserLoginDTO>)
+  fullName: ATMApp.Services.AuthService.AuthService(ATMApp.Repositories.IUserRepository, FluentValidation.IValidator<ATMApp.DTOs.UserLoginDTO>)
+  type: Constructor
+  source:
+    remote:
+      path: Services/AuthService.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: .ctor
+    path: ATM/Services/AuthService.cs
+    startLine: 18
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Services
+  syntax:
+    content: public AuthService(IUserRepository userRepository, IValidator<UserLoginDTO> validator)
+    parameters:
+    - id: userRepository
+      type: ATMApp.Repositories.IUserRepository
+    - id: validator
+      type: FluentValidation.IValidator{ATMApp.DTOs.UserLoginDTO}
+    content.vb: Public Sub New(userRepository As IUserRepository, validator As IValidator(Of UserLoginDTO))
+  overload: ATMApp.Services.AuthService.#ctor*
+  nameWithType.vb: AuthService.New(IUserRepository, IValidator(Of UserLoginDTO))
+  fullName.vb: ATMApp.Services.AuthService.New(ATMApp.Repositories.IUserRepository, FluentValidation.IValidator(Of ATMApp.DTOs.UserLoginDTO))
+  name.vb: New(IUserRepository, IValidator(Of UserLoginDTO))
+- uid: ATMApp.Services.AuthService.Login(ATMApp.DTOs.UserLoginDTO)
+  commentId: M:ATMApp.Services.AuthService.Login(ATMApp.DTOs.UserLoginDTO)
+  id: Login(ATMApp.DTOs.UserLoginDTO)
+  parent: ATMApp.Services.AuthService
+  langs:
+  - csharp
+  - vb
+  name: Login(UserLoginDTO)
+  nameWithType: AuthService.Login(UserLoginDTO)
+  fullName: ATMApp.Services.AuthService.Login(ATMApp.DTOs.UserLoginDTO)
+  type: Method
+  source:
+    remote:
+      path: Services/AuthService.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Login
+    path: ATM/Services/AuthService.cs
+    startLine: 26
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Services
+  summary: This methode will login our users
+  example: []
+  syntax:
+    content: public Task<User> Login(UserLoginDTO userLogin)
+    parameters:
+    - id: userLogin
+      type: ATMApp.DTOs.UserLoginDTO
+    return:
+      type: System.Threading.Tasks.Task{ATMApp.Models.User}
+    content.vb: Public Function Login(userLogin As UserLoginDTO) As Task(Of User)
+  overload: ATMApp.Services.AuthService.Login*
+  implements:
+  - ATMApp.Interfaces.IAuthService.Login(ATMApp.DTOs.UserLoginDTO)
+- uid: ATMApp.Services.AuthService.Exit
+  commentId: M:ATMApp.Services.AuthService.Exit
+  id: Exit
+  parent: ATMApp.Services.AuthService
+  langs:
+  - csharp
+  - vb
+  name: Exit()
+  nameWithType: AuthService.Exit()
+  fullName: ATMApp.Services.AuthService.Exit()
+  type: Method
+  source:
+    remote:
+      path: Services/AuthService.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Exit
+    path: ATM/Services/AuthService.cs
+    startLine: 50
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Services
+  summary: This methode will close the program
+  example: []
+  syntax:
+    content: public void Exit()
+    content.vb: Public Sub [Exit]()
+  overload: ATMApp.Services.AuthService.Exit*
+  implements:
+  - ATMApp.Interfaces.IAuthService.Exit
+references:
+- uid: ATMApp.Services
+  commentId: N:ATMApp.Services
+  href: ATMApp.html
+  name: ATMApp.Services
+  nameWithType: ATMApp.Services
+  fullName: ATMApp.Services
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Services
+    name: Services
+    href: ATMApp.Services.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Services
+    name: Services
+    href: ATMApp.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ATMApp.Interfaces.IAuthService
+  commentId: T:ATMApp.Interfaces.IAuthService
+  parent: ATMApp.Interfaces
+  href: ATMApp.Interfaces.IAuthService.html
+  name: IAuthService
+  nameWithType: IAuthService
+  fullName: ATMApp.Interfaces.IAuthService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ATMApp.Interfaces
+  commentId: N:ATMApp.Interfaces
+  href: ATMApp.html
+  name: ATMApp.Interfaces
+  nameWithType: ATMApp.Interfaces
+  fullName: ATMApp.Interfaces
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Interfaces
+    name: Interfaces
+    href: ATMApp.Interfaces.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Interfaces
+    name: Interfaces
+    href: ATMApp.Interfaces.html
+- uid: ATMApp.Services.AuthService.#ctor*
+  commentId: Overload:ATMApp.Services.AuthService.#ctor
+  href: ATMApp.Services.AuthService.html#ATMApp_Services_AuthService__ctor_ATMApp_Repositories_IUserRepository_FluentValidation_IValidator_ATMApp_DTOs_UserLoginDTO__
+  name: AuthService
+  nameWithType: AuthService.AuthService
+  fullName: ATMApp.Services.AuthService.AuthService
+  nameWithType.vb: AuthService.New
+  fullName.vb: ATMApp.Services.AuthService.New
+  name.vb: New
+- uid: ATMApp.Repositories.IUserRepository
+  commentId: T:ATMApp.Repositories.IUserRepository
+  parent: ATMApp.Repositories
+  href: ATMApp.Repositories.IUserRepository.html
+  name: IUserRepository
+  nameWithType: IUserRepository
+  fullName: ATMApp.Repositories.IUserRepository
+- uid: FluentValidation.IValidator{ATMApp.DTOs.UserLoginDTO}
+  commentId: T:FluentValidation.IValidator{ATMApp.DTOs.UserLoginDTO}
+  parent: FluentValidation
+  definition: FluentValidation.IValidator`1
+  href: ATMApp.DTOs.UserLoginDTO.html
+  name: IValidator<UserLoginDTO>
+  nameWithType: IValidator<UserLoginDTO>
+  fullName: FluentValidation.IValidator<ATMApp.DTOs.UserLoginDTO>
+  nameWithType.vb: IValidator(Of UserLoginDTO)
+  fullName.vb: FluentValidation.IValidator(Of ATMApp.DTOs.UserLoginDTO)
+  name.vb: IValidator(Of UserLoginDTO)
+  spec.csharp:
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    isExternal: true
+  - name: <
+  - uid: ATMApp.DTOs.UserLoginDTO
+    name: UserLoginDTO
+    href: ATMApp.DTOs.UserLoginDTO.html
+  - name: '>'
+  spec.vb:
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ATMApp.DTOs.UserLoginDTO
+    name: UserLoginDTO
+    href: ATMApp.DTOs.UserLoginDTO.html
+  - name: )
+- uid: ATMApp.Repositories
+  commentId: N:ATMApp.Repositories
+  href: ATMApp.html
+  name: ATMApp.Repositories
+  nameWithType: ATMApp.Repositories
+  fullName: ATMApp.Repositories
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Repositories
+    name: Repositories
+    href: ATMApp.Repositories.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Repositories
+    name: Repositories
+    href: ATMApp.Repositories.html
+- uid: FluentValidation.IValidator`1
+  commentId: T:FluentValidation.IValidator`1
+  isExternal: true
+  name: IValidator<T>
+  nameWithType: IValidator<T>
+  fullName: FluentValidation.IValidator<T>
+  nameWithType.vb: IValidator(Of T)
+  fullName.vb: FluentValidation.IValidator(Of T)
+  name.vb: IValidator(Of T)
+  spec.csharp:
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: FluentValidation
+  commentId: N:FluentValidation
+  isExternal: true
+  name: FluentValidation
+  nameWithType: FluentValidation
+  fullName: FluentValidation
+- uid: ATMApp.Services.AuthService.Login*
+  commentId: Overload:ATMApp.Services.AuthService.Login
+  href: ATMApp.Services.AuthService.html#ATMApp_Services_AuthService_Login_ATMApp_DTOs_UserLoginDTO_
+  name: Login
+  nameWithType: AuthService.Login
+  fullName: ATMApp.Services.AuthService.Login
+- uid: ATMApp.Interfaces.IAuthService.Login(ATMApp.DTOs.UserLoginDTO)
+  commentId: M:ATMApp.Interfaces.IAuthService.Login(ATMApp.DTOs.UserLoginDTO)
+  parent: ATMApp.Interfaces.IAuthService
+  href: ATMApp.Interfaces.IAuthService.html#ATMApp_Interfaces_IAuthService_Login_ATMApp_DTOs_UserLoginDTO_
+  name: Login(UserLoginDTO)
+  nameWithType: IAuthService.Login(UserLoginDTO)
+  fullName: ATMApp.Interfaces.IAuthService.Login(ATMApp.DTOs.UserLoginDTO)
+  spec.csharp:
+  - uid: ATMApp.Interfaces.IAuthService.Login(ATMApp.DTOs.UserLoginDTO)
+    name: Login
+    href: ATMApp.Interfaces.IAuthService.html#ATMApp_Interfaces_IAuthService_Login_ATMApp_DTOs_UserLoginDTO_
+  - name: (
+  - uid: ATMApp.DTOs.UserLoginDTO
+    name: UserLoginDTO
+    href: ATMApp.DTOs.UserLoginDTO.html
+  - name: )
+  spec.vb:
+  - uid: ATMApp.Interfaces.IAuthService.Login(ATMApp.DTOs.UserLoginDTO)
+    name: Login
+    href: ATMApp.Interfaces.IAuthService.html#ATMApp_Interfaces_IAuthService_Login_ATMApp_DTOs_UserLoginDTO_
+  - name: (
+  - uid: ATMApp.DTOs.UserLoginDTO
+    name: UserLoginDTO
+    href: ATMApp.DTOs.UserLoginDTO.html
+  - name: )
+- uid: ATMApp.DTOs.UserLoginDTO
+  commentId: T:ATMApp.DTOs.UserLoginDTO
+  parent: ATMApp.DTOs
+  href: ATMApp.DTOs.UserLoginDTO.html
+  name: UserLoginDTO
+  nameWithType: UserLoginDTO
+  fullName: ATMApp.DTOs.UserLoginDTO
+- uid: System.Threading.Tasks.Task{ATMApp.Models.User}
+  commentId: T:System.Threading.Tasks.Task{ATMApp.Models.User}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<User>
+  nameWithType: Task<User>
+  fullName: System.Threading.Tasks.Task<ATMApp.Models.User>
+  nameWithType.vb: Task(Of User)
+  fullName.vb: System.Threading.Tasks.Task(Of ATMApp.Models.User)
+  name.vb: Task(Of User)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: ATMApp.Models.User
+    name: User
+    href: ATMApp.Models.User.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ATMApp.Models.User
+    name: User
+    href: ATMApp.Models.User.html
+  - name: )
+- uid: ATMApp.DTOs
+  commentId: N:ATMApp.DTOs
+  href: ATMApp.html
+  name: ATMApp.DTOs
+  nameWithType: ATMApp.DTOs
+  fullName: ATMApp.DTOs
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.DTOs
+    name: DTOs
+    href: ATMApp.DTOs.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.DTOs
+    name: DTOs
+    href: ATMApp.DTOs.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: ATMApp.Services.AuthService.Exit*
+  commentId: Overload:ATMApp.Services.AuthService.Exit
+  href: ATMApp.Services.AuthService.html#ATMApp_Services_AuthService_Exit
+  name: Exit
+  nameWithType: AuthService.Exit
+  fullName: ATMApp.Services.AuthService.Exit
+- uid: ATMApp.Interfaces.IAuthService.Exit
+  commentId: M:ATMApp.Interfaces.IAuthService.Exit
+  parent: ATMApp.Interfaces.IAuthService
+  href: ATMApp.Interfaces.IAuthService.html#ATMApp_Interfaces_IAuthService_Exit
+  name: Exit()
+  nameWithType: IAuthService.Exit()
+  fullName: ATMApp.Interfaces.IAuthService.Exit()
+  spec.csharp:
+  - uid: ATMApp.Interfaces.IAuthService.Exit
+    name: Exit
+    href: ATMApp.Interfaces.IAuthService.html#ATMApp_Interfaces_IAuthService_Exit
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ATMApp.Interfaces.IAuthService.Exit
+    name: Exit
+    href: ATMApp.Interfaces.IAuthService.html#ATMApp_Interfaces_IAuthService_Exit
+  - name: (
+  - name: )

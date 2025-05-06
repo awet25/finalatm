@@ -1,0 +1,249 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Interfaces.Iuser
+  commentId: T:ATMApp.Interfaces.Iuser
+  id: Iuser
+  parent: ATMApp.Interfaces
+  children:
+  - ATMApp.Interfaces.Iuser.AddUser(ATMApp.Models.User)
+  - ATMApp.Interfaces.Iuser.GetAllPeople
+  langs:
+  - csharp
+  - vb
+  name: Iuser
+  nameWithType: Iuser
+  fullName: ATMApp.Interfaces.Iuser
+  type: Interface
+  source:
+    remote:
+      path: Interfaces/Iuser.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Iuser
+    path: ATM/Interfaces/Iuser.cs
+    startLine: 8
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: public interface Iuser
+    content.vb: Public Interface Iuser
+- uid: ATMApp.Interfaces.Iuser.AddUser(ATMApp.Models.User)
+  commentId: M:ATMApp.Interfaces.Iuser.AddUser(ATMApp.Models.User)
+  id: AddUser(ATMApp.Models.User)
+  parent: ATMApp.Interfaces.Iuser
+  langs:
+  - csharp
+  - vb
+  name: AddUser(User)
+  nameWithType: Iuser.AddUser(User)
+  fullName: ATMApp.Interfaces.Iuser.AddUser(ATMApp.Models.User)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/Iuser.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: AddUser
+    path: ATM/Interfaces/Iuser.cs
+    startLine: 10
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: void AddUser(User user)
+    parameters:
+    - id: user
+      type: ATMApp.Models.User
+    content.vb: Sub AddUser(user As User)
+  overload: ATMApp.Interfaces.Iuser.AddUser*
+- uid: ATMApp.Interfaces.Iuser.GetAllPeople
+  commentId: M:ATMApp.Interfaces.Iuser.GetAllPeople
+  id: GetAllPeople
+  parent: ATMApp.Interfaces.Iuser
+  langs:
+  - csharp
+  - vb
+  name: GetAllPeople()
+  nameWithType: Iuser.GetAllPeople()
+  fullName: ATMApp.Interfaces.Iuser.GetAllPeople()
+  type: Method
+  source:
+    remote:
+      path: Interfaces/Iuser.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: GetAllPeople
+    path: ATM/Interfaces/Iuser.cs
+    startLine: 12
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: List<User> GetAllPeople()
+    return:
+      type: System.Collections.Generic.List{ATMApp.Models.User}
+    content.vb: Function GetAllPeople() As List(Of User)
+  overload: ATMApp.Interfaces.Iuser.GetAllPeople*
+references:
+- uid: ATMApp.Interfaces
+  commentId: N:ATMApp.Interfaces
+  href: ATMApp.html
+  name: ATMApp.Interfaces
+  nameWithType: ATMApp.Interfaces
+  fullName: ATMApp.Interfaces
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Interfaces
+    name: Interfaces
+    href: ATMApp.Interfaces.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Interfaces
+    name: Interfaces
+    href: ATMApp.Interfaces.html
+- uid: ATMApp.Interfaces.Iuser.AddUser*
+  commentId: Overload:ATMApp.Interfaces.Iuser.AddUser
+  href: ATMApp.Interfaces.Iuser.html#ATMApp_Interfaces_Iuser_AddUser_ATMApp_Models_User_
+  name: AddUser
+  nameWithType: Iuser.AddUser
+  fullName: ATMApp.Interfaces.Iuser.AddUser
+- uid: ATMApp.Models.User
+  commentId: T:ATMApp.Models.User
+  parent: ATMApp.Models
+  href: ATMApp.Models.User.html
+  name: User
+  nameWithType: User
+  fullName: ATMApp.Models.User
+- uid: ATMApp.Models
+  commentId: N:ATMApp.Models
+  href: ATMApp.html
+  name: ATMApp.Models
+  nameWithType: ATMApp.Models
+  fullName: ATMApp.Models
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html
+- uid: ATMApp.Interfaces.Iuser.GetAllPeople*
+  commentId: Overload:ATMApp.Interfaces.Iuser.GetAllPeople
+  href: ATMApp.Interfaces.Iuser.html#ATMApp_Interfaces_Iuser_GetAllPeople
+  name: GetAllPeople
+  nameWithType: Iuser.GetAllPeople
+  fullName: ATMApp.Interfaces.Iuser.GetAllPeople
+- uid: System.Collections.Generic.List{ATMApp.Models.User}
+  commentId: T:System.Collections.Generic.List{ATMApp.Models.User}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<User>
+  nameWithType: List<User>
+  fullName: System.Collections.Generic.List<ATMApp.Models.User>
+  nameWithType.vb: List(Of User)
+  fullName.vb: System.Collections.Generic.List(Of ATMApp.Models.User)
+  name.vb: List(Of User)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: ATMApp.Models.User
+    name: User
+    href: ATMApp.Models.User.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ATMApp.Models.User
+    name: User
+    href: ATMApp.Models.User.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

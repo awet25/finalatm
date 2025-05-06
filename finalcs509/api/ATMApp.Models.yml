@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Models
+  commentId: N:ATMApp.Models
+  id: ATMApp.Models
+  children:
+  - ATMApp.Models.Account
+  - ATMApp.Models.AccountStatus
+  - ATMApp.Models.Transaction
+  - ATMApp.Models.TransactionType
+  - ATMApp.Models.User
+  - ATMApp.Models.UserRole
+  langs:
+  - csharp
+  - vb
+  name: ATMApp.Models
+  nameWithType: ATMApp.Models
+  fullName: ATMApp.Models
+  type: Namespace
+  assemblies:
+  - ATMApp
+references:
+- uid: ATMApp.Models.Account
+  commentId: T:ATMApp.Models.Account
+  parent: ATMApp.Models
+  href: ATMApp.Models.Account.html
+  name: Account
+  nameWithType: Account
+  fullName: ATMApp.Models.Account
+- uid: ATMApp.Models.AccountStatus
+  commentId: T:ATMApp.Models.AccountStatus
+  parent: ATMApp.Models
+  href: ATMApp.Models.AccountStatus.html
+  name: AccountStatus
+  nameWithType: AccountStatus
+  fullName: ATMApp.Models.AccountStatus
+- uid: ATMApp.Models.Transaction
+  commentId: T:ATMApp.Models.Transaction
+  parent: ATMApp.Models
+  href: ATMApp.Models.Transaction.html
+  name: Transaction
+  nameWithType: Transaction
+  fullName: ATMApp.Models.Transaction
+- uid: ATMApp.Models.TransactionType
+  commentId: T:ATMApp.Models.TransactionType
+  parent: ATMApp.Models
+  href: ATMApp.Models.TransactionType.html
+  name: TransactionType
+  nameWithType: TransactionType
+  fullName: ATMApp.Models.TransactionType
+- uid: ATMApp.Models.User
+  commentId: T:ATMApp.Models.User
+  parent: ATMApp.Models
+  href: ATMApp.Models.User.html
+  name: User
+  nameWithType: User
+  fullName: ATMApp.Models.User
+- uid: ATMApp.Models.UserRole
+  commentId: T:ATMApp.Models.UserRole
+  parent: ATMApp.Models
+  href: ATMApp.Models.UserRole.html
+  name: UserRole
+  nameWithType: UserRole
+  fullName: ATMApp.Models.UserRole
+- uid: ATMApp.Models
+  commentId: N:ATMApp.Models
+  href: ATMApp.html
+  name: ATMApp.Models
+  nameWithType: ATMApp.Models
+  fullName: ATMApp.Models
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html

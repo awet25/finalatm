@@ -1,0 +1,483 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Interfaces.IAdminservices
+  commentId: T:ATMApp.Interfaces.IAdminservices
+  id: IAdminservices
+  parent: ATMApp.Interfaces
+  children:
+  - ATMApp.Interfaces.IAdminservices.AddUser(ATMApp.DTOs.CreateUserDto)
+  - ATMApp.Interfaces.IAdminservices.DeleteUserAndAccount(System.Int32,System.String)
+  - ATMApp.Interfaces.IAdminservices.GetAccount(System.Int32)
+  - ATMApp.Interfaces.IAdminservices.GetUserByLogin(System.String)
+  - ATMApp.Interfaces.IAdminservices.UpdateUser(ATMApp.DTOs.UpdateUserDto)
+  langs:
+  - csharp
+  - vb
+  name: IAdminservices
+  nameWithType: IAdminservices
+  fullName: ATMApp.Interfaces.IAdminservices
+  type: Interface
+  source:
+    remote:
+      path: Interfaces/IAdminServices.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: IAdminservices
+    path: ATM/Interfaces/IAdminServices.cs
+    startLine: 9
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: public interface IAdminservices
+    content.vb: Public Interface IAdminservices
+- uid: ATMApp.Interfaces.IAdminservices.AddUser(ATMApp.DTOs.CreateUserDto)
+  commentId: M:ATMApp.Interfaces.IAdminservices.AddUser(ATMApp.DTOs.CreateUserDto)
+  id: AddUser(ATMApp.DTOs.CreateUserDto)
+  parent: ATMApp.Interfaces.IAdminservices
+  langs:
+  - csharp
+  - vb
+  name: AddUser(CreateUserDto)
+  nameWithType: IAdminservices.AddUser(CreateUserDto)
+  fullName: ATMApp.Interfaces.IAdminservices.AddUser(ATMApp.DTOs.CreateUserDto)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IAdminServices.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: AddUser
+    path: ATM/Interfaces/IAdminServices.cs
+    startLine: 11
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: Task<bool> AddUser(CreateUserDto createUserDto)
+    parameters:
+    - id: createUserDto
+      type: ATMApp.DTOs.CreateUserDto
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function AddUser(createUserDto As CreateUserDto) As Task(Of Boolean)
+  overload: ATMApp.Interfaces.IAdminservices.AddUser*
+- uid: ATMApp.Interfaces.IAdminservices.GetUserByLogin(System.String)
+  commentId: M:ATMApp.Interfaces.IAdminservices.GetUserByLogin(System.String)
+  id: GetUserByLogin(System.String)
+  parent: ATMApp.Interfaces.IAdminservices
+  langs:
+  - csharp
+  - vb
+  name: GetUserByLogin(string)
+  nameWithType: IAdminservices.GetUserByLogin(string)
+  fullName: ATMApp.Interfaces.IAdminservices.GetUserByLogin(string)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IAdminServices.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: GetUserByLogin
+    path: ATM/Interfaces/IAdminServices.cs
+    startLine: 13
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: Task<User> GetUserByLogin(string login)
+    parameters:
+    - id: login
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{ATMApp.Models.User}
+    content.vb: Function GetUserByLogin(login As String) As Task(Of User)
+  overload: ATMApp.Interfaces.IAdminservices.GetUserByLogin*
+  nameWithType.vb: IAdminservices.GetUserByLogin(String)
+  fullName.vb: ATMApp.Interfaces.IAdminservices.GetUserByLogin(String)
+  name.vb: GetUserByLogin(String)
+- uid: ATMApp.Interfaces.IAdminservices.GetAccount(System.Int32)
+  commentId: M:ATMApp.Interfaces.IAdminservices.GetAccount(System.Int32)
+  id: GetAccount(System.Int32)
+  parent: ATMApp.Interfaces.IAdminservices
+  langs:
+  - csharp
+  - vb
+  name: GetAccount(int)
+  nameWithType: IAdminservices.GetAccount(int)
+  fullName: ATMApp.Interfaces.IAdminservices.GetAccount(int)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IAdminServices.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: GetAccount
+    path: ATM/Interfaces/IAdminServices.cs
+    startLine: 15
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: Task<Account> GetAccount(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{ATMApp.Models.Account}
+    content.vb: Function GetAccount(id As Integer) As Task(Of Account)
+  overload: ATMApp.Interfaces.IAdminservices.GetAccount*
+  nameWithType.vb: IAdminservices.GetAccount(Integer)
+  fullName.vb: ATMApp.Interfaces.IAdminservices.GetAccount(Integer)
+  name.vb: GetAccount(Integer)
+- uid: ATMApp.Interfaces.IAdminservices.DeleteUserAndAccount(System.Int32,System.String)
+  commentId: M:ATMApp.Interfaces.IAdminservices.DeleteUserAndAccount(System.Int32,System.String)
+  id: DeleteUserAndAccount(System.Int32,System.String)
+  parent: ATMApp.Interfaces.IAdminservices
+  langs:
+  - csharp
+  - vb
+  name: DeleteUserAndAccount(int, string)
+  nameWithType: IAdminservices.DeleteUserAndAccount(int, string)
+  fullName: ATMApp.Interfaces.IAdminservices.DeleteUserAndAccount(int, string)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IAdminServices.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: DeleteUserAndAccount
+    path: ATM/Interfaces/IAdminServices.cs
+    startLine: 17
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: Task<bool> DeleteUserAndAccount(int userId, string confirmationInput)
+    parameters:
+    - id: userId
+      type: System.Int32
+    - id: confirmationInput
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function DeleteUserAndAccount(userId As Integer, confirmationInput As String) As Task(Of Boolean)
+  overload: ATMApp.Interfaces.IAdminservices.DeleteUserAndAccount*
+  nameWithType.vb: IAdminservices.DeleteUserAndAccount(Integer, String)
+  fullName.vb: ATMApp.Interfaces.IAdminservices.DeleteUserAndAccount(Integer, String)
+  name.vb: DeleteUserAndAccount(Integer, String)
+- uid: ATMApp.Interfaces.IAdminservices.UpdateUser(ATMApp.DTOs.UpdateUserDto)
+  commentId: M:ATMApp.Interfaces.IAdminservices.UpdateUser(ATMApp.DTOs.UpdateUserDto)
+  id: UpdateUser(ATMApp.DTOs.UpdateUserDto)
+  parent: ATMApp.Interfaces.IAdminservices
+  langs:
+  - csharp
+  - vb
+  name: UpdateUser(UpdateUserDto)
+  nameWithType: IAdminservices.UpdateUser(UpdateUserDto)
+  fullName: ATMApp.Interfaces.IAdminservices.UpdateUser(ATMApp.DTOs.UpdateUserDto)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IAdminServices.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: UpdateUser
+    path: ATM/Interfaces/IAdminServices.cs
+    startLine: 19
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: Task<bool> UpdateUser(UpdateUserDto updateUserDto)
+    parameters:
+    - id: updateUserDto
+      type: ATMApp.DTOs.UpdateUserDto
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function UpdateUser(updateUserDto As UpdateUserDto) As Task(Of Boolean)
+  overload: ATMApp.Interfaces.IAdminservices.UpdateUser*
+references:
+- uid: ATMApp.Interfaces
+  commentId: N:ATMApp.Interfaces
+  href: ATMApp.html
+  name: ATMApp.Interfaces
+  nameWithType: ATMApp.Interfaces
+  fullName: ATMApp.Interfaces
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Interfaces
+    name: Interfaces
+    href: ATMApp.Interfaces.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Interfaces
+    name: Interfaces
+    href: ATMApp.Interfaces.html
+- uid: ATMApp.Interfaces.IAdminservices.AddUser*
+  commentId: Overload:ATMApp.Interfaces.IAdminservices.AddUser
+  href: ATMApp.Interfaces.IAdminservices.html#ATMApp_Interfaces_IAdminservices_AddUser_ATMApp_DTOs_CreateUserDto_
+  name: AddUser
+  nameWithType: IAdminservices.AddUser
+  fullName: ATMApp.Interfaces.IAdminservices.AddUser
+- uid: ATMApp.DTOs.CreateUserDto
+  commentId: T:ATMApp.DTOs.CreateUserDto
+  parent: ATMApp.DTOs
+  href: ATMApp.DTOs.CreateUserDto.html
+  name: CreateUserDto
+  nameWithType: CreateUserDto
+  fullName: ATMApp.DTOs.CreateUserDto
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: ATMApp.DTOs
+  commentId: N:ATMApp.DTOs
+  href: ATMApp.html
+  name: ATMApp.DTOs
+  nameWithType: ATMApp.DTOs
+  fullName: ATMApp.DTOs
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.DTOs
+    name: DTOs
+    href: ATMApp.DTOs.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.DTOs
+    name: DTOs
+    href: ATMApp.DTOs.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: ATMApp.Interfaces.IAdminservices.GetUserByLogin*
+  commentId: Overload:ATMApp.Interfaces.IAdminservices.GetUserByLogin
+  href: ATMApp.Interfaces.IAdminservices.html#ATMApp_Interfaces_IAdminservices_GetUserByLogin_System_String_
+  name: GetUserByLogin
+  nameWithType: IAdminservices.GetUserByLogin
+  fullName: ATMApp.Interfaces.IAdminservices.GetUserByLogin
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{ATMApp.Models.User}
+  commentId: T:System.Threading.Tasks.Task{ATMApp.Models.User}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<User>
+  nameWithType: Task<User>
+  fullName: System.Threading.Tasks.Task<ATMApp.Models.User>
+  nameWithType.vb: Task(Of User)
+  fullName.vb: System.Threading.Tasks.Task(Of ATMApp.Models.User)
+  name.vb: Task(Of User)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: ATMApp.Models.User
+    name: User
+    href: ATMApp.Models.User.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ATMApp.Models.User
+    name: User
+    href: ATMApp.Models.User.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ATMApp.Interfaces.IAdminservices.GetAccount*
+  commentId: Overload:ATMApp.Interfaces.IAdminservices.GetAccount
+  href: ATMApp.Interfaces.IAdminservices.html#ATMApp_Interfaces_IAdminservices_GetAccount_System_Int32_
+  name: GetAccount
+  nameWithType: IAdminservices.GetAccount
+  fullName: ATMApp.Interfaces.IAdminservices.GetAccount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task{ATMApp.Models.Account}
+  commentId: T:System.Threading.Tasks.Task{ATMApp.Models.Account}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Account>
+  nameWithType: Task<Account>
+  fullName: System.Threading.Tasks.Task<ATMApp.Models.Account>
+  nameWithType.vb: Task(Of Account)
+  fullName.vb: System.Threading.Tasks.Task(Of ATMApp.Models.Account)
+  name.vb: Task(Of Account)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: ATMApp.Models.Account
+    name: Account
+    href: ATMApp.Models.Account.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ATMApp.Models.Account
+    name: Account
+    href: ATMApp.Models.Account.html
+  - name: )
+- uid: ATMApp.Interfaces.IAdminservices.DeleteUserAndAccount*
+  commentId: Overload:ATMApp.Interfaces.IAdminservices.DeleteUserAndAccount
+  href: ATMApp.Interfaces.IAdminservices.html#ATMApp_Interfaces_IAdminservices_DeleteUserAndAccount_System_Int32_System_String_
+  name: DeleteUserAndAccount
+  nameWithType: IAdminservices.DeleteUserAndAccount
+  fullName: ATMApp.Interfaces.IAdminservices.DeleteUserAndAccount
+- uid: ATMApp.Interfaces.IAdminservices.UpdateUser*
+  commentId: Overload:ATMApp.Interfaces.IAdminservices.UpdateUser
+  href: ATMApp.Interfaces.IAdminservices.html#ATMApp_Interfaces_IAdminservices_UpdateUser_ATMApp_DTOs_UpdateUserDto_
+  name: UpdateUser
+  nameWithType: IAdminservices.UpdateUser
+  fullName: ATMApp.Interfaces.IAdminservices.UpdateUser
+- uid: ATMApp.DTOs.UpdateUserDto
+  commentId: T:ATMApp.DTOs.UpdateUserDto
+  parent: ATMApp.DTOs
+  href: ATMApp.DTOs.UpdateUserDto.html
+  name: UpdateUserDto
+  nameWithType: UpdateUserDto
+  fullName: ATMApp.DTOs.UpdateUserDto

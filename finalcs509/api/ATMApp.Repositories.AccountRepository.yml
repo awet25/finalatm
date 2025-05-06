@@ -1,0 +1,935 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Repositories.AccountRepository
+  commentId: T:ATMApp.Repositories.AccountRepository
+  id: AccountRepository
+  parent: ATMApp.Repositories
+  children:
+  - ATMApp.Repositories.AccountRepository.#ctor(ATMApp.Data.ATMContext)
+  - ATMApp.Repositories.AccountRepository.CreateAccount(ATMApp.Models.Account)
+  - ATMApp.Repositories.AccountRepository.DeleteAccountById(System.Int32)
+  - ATMApp.Repositories.AccountRepository.GetAccountByClientID(System.Int32)
+  - ATMApp.Repositories.AccountRepository.GetAccountById(System.Int32)
+  - ATMApp.Repositories.AccountRepository.UpdateAccount(ATMApp.Models.Account)
+  langs:
+  - csharp
+  - vb
+  name: AccountRepository
+  nameWithType: AccountRepository
+  fullName: ATMApp.Repositories.AccountRepository
+  type: Class
+  source:
+    remote:
+      path: Repositories/AccountRepository.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: AccountRepository
+    path: ATM/Repositories/AccountRepository.cs
+    startLine: 12
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  syntax:
+    content: 'public class AccountRepository : IAccountRepository'
+    content.vb: Public Class AccountRepository Implements IAccountRepository
+  inheritance:
+  - System.Object
+  implements:
+  - ATMApp.Interfaces.IAccountRepository
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ATMApp.Repositories.AccountRepository.#ctor(ATMApp.Data.ATMContext)
+  commentId: M:ATMApp.Repositories.AccountRepository.#ctor(ATMApp.Data.ATMContext)
+  id: '#ctor(ATMApp.Data.ATMContext)'
+  parent: ATMApp.Repositories.AccountRepository
+  langs:
+  - csharp
+  - vb
+  name: AccountRepository(ATMContext)
+  nameWithType: AccountRepository.AccountRepository(ATMContext)
+  fullName: ATMApp.Repositories.AccountRepository.AccountRepository(ATMApp.Data.ATMContext)
+  type: Constructor
+  source:
+    remote:
+      path: Repositories/AccountRepository.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: .ctor
+    path: ATM/Repositories/AccountRepository.cs
+    startLine: 16
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  syntax:
+    content: public AccountRepository(ATMContext context)
+    parameters:
+    - id: context
+      type: ATMApp.Data.ATMContext
+    content.vb: Public Sub New(context As ATMContext)
+  overload: ATMApp.Repositories.AccountRepository.#ctor*
+  nameWithType.vb: AccountRepository.New(ATMContext)
+  fullName.vb: ATMApp.Repositories.AccountRepository.New(ATMApp.Data.ATMContext)
+  name.vb: New(ATMContext)
+- uid: ATMApp.Repositories.AccountRepository.CreateAccount(ATMApp.Models.Account)
+  commentId: M:ATMApp.Repositories.AccountRepository.CreateAccount(ATMApp.Models.Account)
+  id: CreateAccount(ATMApp.Models.Account)
+  parent: ATMApp.Repositories.AccountRepository
+  langs:
+  - csharp
+  - vb
+  name: CreateAccount(Account)
+  nameWithType: AccountRepository.CreateAccount(Account)
+  fullName: ATMApp.Repositories.AccountRepository.CreateAccount(ATMApp.Models.Account)
+  type: Method
+  source:
+    remote:
+      path: Repositories/AccountRepository.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: CreateAccount
+    path: ATM/Repositories/AccountRepository.cs
+    startLine: 23
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  summary: This methode will create an Account in Account Repo
+  example: []
+  syntax:
+    content: public Task<Account> CreateAccount(Account newAccount)
+    parameters:
+    - id: newAccount
+      type: ATMApp.Models.Account
+    return:
+      type: System.Threading.Tasks.Task{ATMApp.Models.Account}
+    content.vb: Public Function CreateAccount(newAccount As Account) As Task(Of Account)
+  overload: ATMApp.Repositories.AccountRepository.CreateAccount*
+  implements:
+  - ATMApp.Interfaces.IAccountRepository.CreateAccount(ATMApp.Models.Account)
+- uid: ATMApp.Repositories.AccountRepository.GetAccountById(System.Int32)
+  commentId: M:ATMApp.Repositories.AccountRepository.GetAccountById(System.Int32)
+  id: GetAccountById(System.Int32)
+  parent: ATMApp.Repositories.AccountRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAccountById(int)
+  nameWithType: AccountRepository.GetAccountById(int)
+  fullName: ATMApp.Repositories.AccountRepository.GetAccountById(int)
+  type: Method
+  source:
+    remote:
+      path: Repositories/AccountRepository.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: GetAccountById
+    path: ATM/Repositories/AccountRepository.cs
+    startLine: 32
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  summary: This methode will return  an Account by accountId in Account Repo
+  example: []
+  syntax:
+    content: public Task<Account> GetAccountById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{ATMApp.Models.Account}
+    content.vb: Public Function GetAccountById(id As Integer) As Task(Of Account)
+  overload: ATMApp.Repositories.AccountRepository.GetAccountById*
+  implements:
+  - ATMApp.Interfaces.IAccountRepository.GetAccountById(System.Int32)
+  nameWithType.vb: AccountRepository.GetAccountById(Integer)
+  fullName.vb: ATMApp.Repositories.AccountRepository.GetAccountById(Integer)
+  name.vb: GetAccountById(Integer)
+- uid: ATMApp.Repositories.AccountRepository.DeleteAccountById(System.Int32)
+  commentId: M:ATMApp.Repositories.AccountRepository.DeleteAccountById(System.Int32)
+  id: DeleteAccountById(System.Int32)
+  parent: ATMApp.Repositories.AccountRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteAccountById(int)
+  nameWithType: AccountRepository.DeleteAccountById(int)
+  fullName: ATMApp.Repositories.AccountRepository.DeleteAccountById(int)
+  type: Method
+  source:
+    remote:
+      path: Repositories/AccountRepository.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: DeleteAccountById
+    path: ATM/Repositories/AccountRepository.cs
+    startLine: 39
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  summary: This methode will delete an Account by accountId in Account Repo
+  example: []
+  syntax:
+    content: public Task<bool> DeleteAccountById(int accountId)
+    parameters:
+    - id: accountId
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function DeleteAccountById(accountId As Integer) As Task(Of Boolean)
+  overload: ATMApp.Repositories.AccountRepository.DeleteAccountById*
+  implements:
+  - ATMApp.Interfaces.IAccountRepository.DeleteAccountById(System.Int32)
+  nameWithType.vb: AccountRepository.DeleteAccountById(Integer)
+  fullName.vb: ATMApp.Repositories.AccountRepository.DeleteAccountById(Integer)
+  name.vb: DeleteAccountById(Integer)
+- uid: ATMApp.Repositories.AccountRepository.UpdateAccount(ATMApp.Models.Account)
+  commentId: M:ATMApp.Repositories.AccountRepository.UpdateAccount(ATMApp.Models.Account)
+  id: UpdateAccount(ATMApp.Models.Account)
+  parent: ATMApp.Repositories.AccountRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateAccount(Account)
+  nameWithType: AccountRepository.UpdateAccount(Account)
+  fullName: ATMApp.Repositories.AccountRepository.UpdateAccount(ATMApp.Models.Account)
+  type: Method
+  source:
+    remote:
+      path: Repositories/AccountRepository.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: UpdateAccount
+    path: ATM/Repositories/AccountRepository.cs
+    startLine: 54
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  summary: This methode will update  an Account by accountId in Account Repo
+  example: []
+  syntax:
+    content: public Task<Account> UpdateAccount(Account account)
+    parameters:
+    - id: account
+      type: ATMApp.Models.Account
+    return:
+      type: System.Threading.Tasks.Task{ATMApp.Models.Account}
+    content.vb: Public Function UpdateAccount(account As Account) As Task(Of Account)
+  overload: ATMApp.Repositories.AccountRepository.UpdateAccount*
+  implements:
+  - ATMApp.Interfaces.IAccountRepository.UpdateAccount(ATMApp.Models.Account)
+- uid: ATMApp.Repositories.AccountRepository.GetAccountByClientID(System.Int32)
+  commentId: M:ATMApp.Repositories.AccountRepository.GetAccountByClientID(System.Int32)
+  id: GetAccountByClientID(System.Int32)
+  parent: ATMApp.Repositories.AccountRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAccountByClientID(int)
+  nameWithType: AccountRepository.GetAccountByClientID(int)
+  fullName: ATMApp.Repositories.AccountRepository.GetAccountByClientID(int)
+  type: Method
+  source:
+    remote:
+      path: Repositories/AccountRepository.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: GetAccountByClientID
+    path: ATM/Repositories/AccountRepository.cs
+    startLine: 63
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  summary: This methode will return  an Account by clientId in Account Repo
+  example: []
+  syntax:
+    content: public Task<Account> GetAccountByClientID(int clientId)
+    parameters:
+    - id: clientId
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{ATMApp.Models.Account}
+    content.vb: Public Function GetAccountByClientID(clientId As Integer) As Task(Of Account)
+  overload: ATMApp.Repositories.AccountRepository.GetAccountByClientID*
+  implements:
+  - ATMApp.Interfaces.IAccountRepository.GetAccountByClientID(System.Int32)
+  nameWithType.vb: AccountRepository.GetAccountByClientID(Integer)
+  fullName.vb: ATMApp.Repositories.AccountRepository.GetAccountByClientID(Integer)
+  name.vb: GetAccountByClientID(Integer)
+references:
+- uid: ATMApp.Repositories
+  commentId: N:ATMApp.Repositories
+  href: ATMApp.html
+  name: ATMApp.Repositories
+  nameWithType: ATMApp.Repositories
+  fullName: ATMApp.Repositories
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Repositories
+    name: Repositories
+    href: ATMApp.Repositories.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Repositories
+    name: Repositories
+    href: ATMApp.Repositories.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ATMApp.Interfaces.IAccountRepository
+  commentId: T:ATMApp.Interfaces.IAccountRepository
+  parent: ATMApp.Interfaces
+  href: ATMApp.Interfaces.IAccountRepository.html
+  name: IAccountRepository
+  nameWithType: IAccountRepository
+  fullName: ATMApp.Interfaces.IAccountRepository
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ATMApp.Interfaces
+  commentId: N:ATMApp.Interfaces
+  href: ATMApp.html
+  name: ATMApp.Interfaces
+  nameWithType: ATMApp.Interfaces
+  fullName: ATMApp.Interfaces
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Interfaces
+    name: Interfaces
+    href: ATMApp.Interfaces.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Interfaces
+    name: Interfaces
+    href: ATMApp.Interfaces.html
+- uid: ATMApp.Repositories.AccountRepository.#ctor*
+  commentId: Overload:ATMApp.Repositories.AccountRepository.#ctor
+  href: ATMApp.Repositories.AccountRepository.html#ATMApp_Repositories_AccountRepository__ctor_ATMApp_Data_ATMContext_
+  name: AccountRepository
+  nameWithType: AccountRepository.AccountRepository
+  fullName: ATMApp.Repositories.AccountRepository.AccountRepository
+  nameWithType.vb: AccountRepository.New
+  fullName.vb: ATMApp.Repositories.AccountRepository.New
+  name.vb: New
+- uid: ATMApp.Data.ATMContext
+  commentId: T:ATMApp.Data.ATMContext
+  parent: ATMApp.Data
+  href: ATMApp.Data.ATMContext.html
+  name: ATMContext
+  nameWithType: ATMContext
+  fullName: ATMApp.Data.ATMContext
+- uid: ATMApp.Data
+  commentId: N:ATMApp.Data
+  href: ATMApp.html
+  name: ATMApp.Data
+  nameWithType: ATMApp.Data
+  fullName: ATMApp.Data
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Data
+    name: Data
+    href: ATMApp.Data.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Data
+    name: Data
+    href: ATMApp.Data.html
+- uid: ATMApp.Repositories.AccountRepository.CreateAccount*
+  commentId: Overload:ATMApp.Repositories.AccountRepository.CreateAccount
+  href: ATMApp.Repositories.AccountRepository.html#ATMApp_Repositories_AccountRepository_CreateAccount_ATMApp_Models_Account_
+  name: CreateAccount
+  nameWithType: AccountRepository.CreateAccount
+  fullName: ATMApp.Repositories.AccountRepository.CreateAccount
+- uid: ATMApp.Interfaces.IAccountRepository.CreateAccount(ATMApp.Models.Account)
+  commentId: M:ATMApp.Interfaces.IAccountRepository.CreateAccount(ATMApp.Models.Account)
+  parent: ATMApp.Interfaces.IAccountRepository
+  href: ATMApp.Interfaces.IAccountRepository.html#ATMApp_Interfaces_IAccountRepository_CreateAccount_ATMApp_Models_Account_
+  name: CreateAccount(Account)
+  nameWithType: IAccountRepository.CreateAccount(Account)
+  fullName: ATMApp.Interfaces.IAccountRepository.CreateAccount(ATMApp.Models.Account)
+  spec.csharp:
+  - uid: ATMApp.Interfaces.IAccountRepository.CreateAccount(ATMApp.Models.Account)
+    name: CreateAccount
+    href: ATMApp.Interfaces.IAccountRepository.html#ATMApp_Interfaces_IAccountRepository_CreateAccount_ATMApp_Models_Account_
+  - name: (
+  - uid: ATMApp.Models.Account
+    name: Account
+    href: ATMApp.Models.Account.html
+  - name: )
+  spec.vb:
+  - uid: ATMApp.Interfaces.IAccountRepository.CreateAccount(ATMApp.Models.Account)
+    name: CreateAccount
+    href: ATMApp.Interfaces.IAccountRepository.html#ATMApp_Interfaces_IAccountRepository_CreateAccount_ATMApp_Models_Account_
+  - name: (
+  - uid: ATMApp.Models.Account
+    name: Account
+    href: ATMApp.Models.Account.html
+  - name: )
+- uid: ATMApp.Models.Account
+  commentId: T:ATMApp.Models.Account
+  parent: ATMApp.Models
+  href: ATMApp.Models.Account.html
+  name: Account
+  nameWithType: Account
+  fullName: ATMApp.Models.Account
+- uid: System.Threading.Tasks.Task{ATMApp.Models.Account}
+  commentId: T:System.Threading.Tasks.Task{ATMApp.Models.Account}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Account>
+  nameWithType: Task<Account>
+  fullName: System.Threading.Tasks.Task<ATMApp.Models.Account>
+  nameWithType.vb: Task(Of Account)
+  fullName.vb: System.Threading.Tasks.Task(Of ATMApp.Models.Account)
+  name.vb: Task(Of Account)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: ATMApp.Models.Account
+    name: Account
+    href: ATMApp.Models.Account.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ATMApp.Models.Account
+    name: Account
+    href: ATMApp.Models.Account.html
+  - name: )
+- uid: ATMApp.Models
+  commentId: N:ATMApp.Models
+  href: ATMApp.html
+  name: ATMApp.Models
+  nameWithType: ATMApp.Models
+  fullName: ATMApp.Models
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: ATMApp.Repositories.AccountRepository.GetAccountById*
+  commentId: Overload:ATMApp.Repositories.AccountRepository.GetAccountById
+  href: ATMApp.Repositories.AccountRepository.html#ATMApp_Repositories_AccountRepository_GetAccountById_System_Int32_
+  name: GetAccountById
+  nameWithType: AccountRepository.GetAccountById
+  fullName: ATMApp.Repositories.AccountRepository.GetAccountById
+- uid: ATMApp.Interfaces.IAccountRepository.GetAccountById(System.Int32)
+  commentId: M:ATMApp.Interfaces.IAccountRepository.GetAccountById(System.Int32)
+  parent: ATMApp.Interfaces.IAccountRepository
+  isExternal: true
+  href: ATMApp.Interfaces.IAccountRepository.html#ATMApp_Interfaces_IAccountRepository_GetAccountById_System_Int32_
+  name: GetAccountById(int)
+  nameWithType: IAccountRepository.GetAccountById(int)
+  fullName: ATMApp.Interfaces.IAccountRepository.GetAccountById(int)
+  nameWithType.vb: IAccountRepository.GetAccountById(Integer)
+  fullName.vb: ATMApp.Interfaces.IAccountRepository.GetAccountById(Integer)
+  name.vb: GetAccountById(Integer)
+  spec.csharp:
+  - uid: ATMApp.Interfaces.IAccountRepository.GetAccountById(System.Int32)
+    name: GetAccountById
+    href: ATMApp.Interfaces.IAccountRepository.html#ATMApp_Interfaces_IAccountRepository_GetAccountById_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ATMApp.Interfaces.IAccountRepository.GetAccountById(System.Int32)
+    name: GetAccountById
+    href: ATMApp.Interfaces.IAccountRepository.html#ATMApp_Interfaces_IAccountRepository_GetAccountById_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ATMApp.Repositories.AccountRepository.DeleteAccountById*
+  commentId: Overload:ATMApp.Repositories.AccountRepository.DeleteAccountById
+  href: ATMApp.Repositories.AccountRepository.html#ATMApp_Repositories_AccountRepository_DeleteAccountById_System_Int32_
+  name: DeleteAccountById
+  nameWithType: AccountRepository.DeleteAccountById
+  fullName: ATMApp.Repositories.AccountRepository.DeleteAccountById
+- uid: ATMApp.Interfaces.IAccountRepository.DeleteAccountById(System.Int32)
+  commentId: M:ATMApp.Interfaces.IAccountRepository.DeleteAccountById(System.Int32)
+  parent: ATMApp.Interfaces.IAccountRepository
+  isExternal: true
+  href: ATMApp.Interfaces.IAccountRepository.html#ATMApp_Interfaces_IAccountRepository_DeleteAccountById_System_Int32_
+  name: DeleteAccountById(int)
+  nameWithType: IAccountRepository.DeleteAccountById(int)
+  fullName: ATMApp.Interfaces.IAccountRepository.DeleteAccountById(int)
+  nameWithType.vb: IAccountRepository.DeleteAccountById(Integer)
+  fullName.vb: ATMApp.Interfaces.IAccountRepository.DeleteAccountById(Integer)
+  name.vb: DeleteAccountById(Integer)
+  spec.csharp:
+  - uid: ATMApp.Interfaces.IAccountRepository.DeleteAccountById(System.Int32)
+    name: DeleteAccountById
+    href: ATMApp.Interfaces.IAccountRepository.html#ATMApp_Interfaces_IAccountRepository_DeleteAccountById_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ATMApp.Interfaces.IAccountRepository.DeleteAccountById(System.Int32)
+    name: DeleteAccountById
+    href: ATMApp.Interfaces.IAccountRepository.html#ATMApp_Interfaces_IAccountRepository_DeleteAccountById_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: ATMApp.Repositories.AccountRepository.UpdateAccount*
+  commentId: Overload:ATMApp.Repositories.AccountRepository.UpdateAccount
+  href: ATMApp.Repositories.AccountRepository.html#ATMApp_Repositories_AccountRepository_UpdateAccount_ATMApp_Models_Account_
+  name: UpdateAccount
+  nameWithType: AccountRepository.UpdateAccount
+  fullName: ATMApp.Repositories.AccountRepository.UpdateAccount
+- uid: ATMApp.Interfaces.IAccountRepository.UpdateAccount(ATMApp.Models.Account)
+  commentId: M:ATMApp.Interfaces.IAccountRepository.UpdateAccount(ATMApp.Models.Account)
+  parent: ATMApp.Interfaces.IAccountRepository
+  href: ATMApp.Interfaces.IAccountRepository.html#ATMApp_Interfaces_IAccountRepository_UpdateAccount_ATMApp_Models_Account_
+  name: UpdateAccount(Account)
+  nameWithType: IAccountRepository.UpdateAccount(Account)
+  fullName: ATMApp.Interfaces.IAccountRepository.UpdateAccount(ATMApp.Models.Account)
+  spec.csharp:
+  - uid: ATMApp.Interfaces.IAccountRepository.UpdateAccount(ATMApp.Models.Account)
+    name: UpdateAccount
+    href: ATMApp.Interfaces.IAccountRepository.html#ATMApp_Interfaces_IAccountRepository_UpdateAccount_ATMApp_Models_Account_
+  - name: (
+  - uid: ATMApp.Models.Account
+    name: Account
+    href: ATMApp.Models.Account.html
+  - name: )
+  spec.vb:
+  - uid: ATMApp.Interfaces.IAccountRepository.UpdateAccount(ATMApp.Models.Account)
+    name: UpdateAccount
+    href: ATMApp.Interfaces.IAccountRepository.html#ATMApp_Interfaces_IAccountRepository_UpdateAccount_ATMApp_Models_Account_
+  - name: (
+  - uid: ATMApp.Models.Account
+    name: Account
+    href: ATMApp.Models.Account.html
+  - name: )
+- uid: ATMApp.Repositories.AccountRepository.GetAccountByClientID*
+  commentId: Overload:ATMApp.Repositories.AccountRepository.GetAccountByClientID
+  href: ATMApp.Repositories.AccountRepository.html#ATMApp_Repositories_AccountRepository_GetAccountByClientID_System_Int32_
+  name: GetAccountByClientID
+  nameWithType: AccountRepository.GetAccountByClientID
+  fullName: ATMApp.Repositories.AccountRepository.GetAccountByClientID
+- uid: ATMApp.Interfaces.IAccountRepository.GetAccountByClientID(System.Int32)
+  commentId: M:ATMApp.Interfaces.IAccountRepository.GetAccountByClientID(System.Int32)
+  parent: ATMApp.Interfaces.IAccountRepository
+  isExternal: true
+  href: ATMApp.Interfaces.IAccountRepository.html#ATMApp_Interfaces_IAccountRepository_GetAccountByClientID_System_Int32_
+  name: GetAccountByClientID(int)
+  nameWithType: IAccountRepository.GetAccountByClientID(int)
+  fullName: ATMApp.Interfaces.IAccountRepository.GetAccountByClientID(int)
+  nameWithType.vb: IAccountRepository.GetAccountByClientID(Integer)
+  fullName.vb: ATMApp.Interfaces.IAccountRepository.GetAccountByClientID(Integer)
+  name.vb: GetAccountByClientID(Integer)
+  spec.csharp:
+  - uid: ATMApp.Interfaces.IAccountRepository.GetAccountByClientID(System.Int32)
+    name: GetAccountByClientID
+    href: ATMApp.Interfaces.IAccountRepository.html#ATMApp_Interfaces_IAccountRepository_GetAccountByClientID_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ATMApp.Interfaces.IAccountRepository.GetAccountByClientID(System.Int32)
+    name: GetAccountByClientID
+    href: ATMApp.Interfaces.IAccountRepository.html#ATMApp_Interfaces_IAccountRepository_GetAccountByClientID_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )

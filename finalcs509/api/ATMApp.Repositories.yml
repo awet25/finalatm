@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Repositories
+  commentId: N:ATMApp.Repositories
+  id: ATMApp.Repositories
+  children:
+  - ATMApp.Repositories.AccountRepository
+  - ATMApp.Repositories.IUserRepository
+  - ATMApp.Repositories.TransactionRepository
+  - ATMApp.Repositories.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: ATMApp.Repositories
+  nameWithType: ATMApp.Repositories
+  fullName: ATMApp.Repositories
+  type: Namespace
+  assemblies:
+  - ATMApp
+references:
+- uid: ATMApp.Repositories.IUserRepository
+  commentId: T:ATMApp.Repositories.IUserRepository
+  parent: ATMApp.Repositories
+  href: ATMApp.Repositories.IUserRepository.html
+  name: IUserRepository
+  nameWithType: IUserRepository
+  fullName: ATMApp.Repositories.IUserRepository
+- uid: ATMApp.Repositories.AccountRepository
+  commentId: T:ATMApp.Repositories.AccountRepository
+  href: ATMApp.Repositories.AccountRepository.html
+  name: AccountRepository
+  nameWithType: AccountRepository
+  fullName: ATMApp.Repositories.AccountRepository
+- uid: ATMApp.Repositories.TransactionRepository
+  commentId: T:ATMApp.Repositories.TransactionRepository
+  href: ATMApp.Repositories.TransactionRepository.html
+  name: TransactionRepository
+  nameWithType: TransactionRepository
+  fullName: ATMApp.Repositories.TransactionRepository
+- uid: ATMApp.Repositories.UserRepository
+  commentId: T:ATMApp.Repositories.UserRepository
+  href: ATMApp.Repositories.UserRepository.html
+  name: UserRepository
+  nameWithType: UserRepository
+  fullName: ATMApp.Repositories.UserRepository
+- uid: ATMApp.Repositories
+  commentId: N:ATMApp.Repositories
+  href: ATMApp.html
+  name: ATMApp.Repositories
+  nameWithType: ATMApp.Repositories
+  fullName: ATMApp.Repositories
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Repositories
+    name: Repositories
+    href: ATMApp.Repositories.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Repositories
+    name: Repositories
+    href: ATMApp.Repositories.html

@@ -1,0 +1,403 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Interfaces.IClientService
+  commentId: T:ATMApp.Interfaces.IClientService
+  id: IClientService
+  parent: ATMApp.Interfaces
+  children:
+  - ATMApp.Interfaces.IClientService.Deposit(System.Int32,System.Decimal)
+  - ATMApp.Interfaces.IClientService.GetBalance(System.Int32)
+  - ATMApp.Interfaces.IClientService.GetTransactionHistory(System.Int32)
+  - ATMApp.Interfaces.IClientService.Withdraw(System.Int32,System.Decimal)
+  langs:
+  - csharp
+  - vb
+  name: IClientService
+  nameWithType: IClientService
+  fullName: ATMApp.Interfaces.IClientService
+  type: Interface
+  source:
+    remote:
+      path: Interfaces/IClientService.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: IClientService
+    path: ATM/Interfaces/IClientService.cs
+    startLine: 9
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: public interface IClientService
+    content.vb: Public Interface IClientService
+- uid: ATMApp.Interfaces.IClientService.Deposit(System.Int32,System.Decimal)
+  commentId: M:ATMApp.Interfaces.IClientService.Deposit(System.Int32,System.Decimal)
+  id: Deposit(System.Int32,System.Decimal)
+  parent: ATMApp.Interfaces.IClientService
+  langs:
+  - csharp
+  - vb
+  name: Deposit(int, decimal)
+  nameWithType: IClientService.Deposit(int, decimal)
+  fullName: ATMApp.Interfaces.IClientService.Deposit(int, decimal)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IClientService.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Deposit
+    path: ATM/Interfaces/IClientService.cs
+    startLine: 11
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: Task<bool> Deposit(int accountId, decimal amount)
+    parameters:
+    - id: accountId
+      type: System.Int32
+    - id: amount
+      type: System.Decimal
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function Deposit(accountId As Integer, amount As Decimal) As Task(Of Boolean)
+  overload: ATMApp.Interfaces.IClientService.Deposit*
+  nameWithType.vb: IClientService.Deposit(Integer, Decimal)
+  fullName.vb: ATMApp.Interfaces.IClientService.Deposit(Integer, Decimal)
+  name.vb: Deposit(Integer, Decimal)
+- uid: ATMApp.Interfaces.IClientService.Withdraw(System.Int32,System.Decimal)
+  commentId: M:ATMApp.Interfaces.IClientService.Withdraw(System.Int32,System.Decimal)
+  id: Withdraw(System.Int32,System.Decimal)
+  parent: ATMApp.Interfaces.IClientService
+  langs:
+  - csharp
+  - vb
+  name: Withdraw(int, decimal)
+  nameWithType: IClientService.Withdraw(int, decimal)
+  fullName: ATMApp.Interfaces.IClientService.Withdraw(int, decimal)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IClientService.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Withdraw
+    path: ATM/Interfaces/IClientService.cs
+    startLine: 13
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: Task<bool> Withdraw(int clientID, decimal amount)
+    parameters:
+    - id: clientID
+      type: System.Int32
+    - id: amount
+      type: System.Decimal
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function Withdraw(clientID As Integer, amount As Decimal) As Task(Of Boolean)
+  overload: ATMApp.Interfaces.IClientService.Withdraw*
+  nameWithType.vb: IClientService.Withdraw(Integer, Decimal)
+  fullName.vb: ATMApp.Interfaces.IClientService.Withdraw(Integer, Decimal)
+  name.vb: Withdraw(Integer, Decimal)
+- uid: ATMApp.Interfaces.IClientService.GetBalance(System.Int32)
+  commentId: M:ATMApp.Interfaces.IClientService.GetBalance(System.Int32)
+  id: GetBalance(System.Int32)
+  parent: ATMApp.Interfaces.IClientService
+  langs:
+  - csharp
+  - vb
+  name: GetBalance(int)
+  nameWithType: IClientService.GetBalance(int)
+  fullName: ATMApp.Interfaces.IClientService.GetBalance(int)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IClientService.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: GetBalance
+    path: ATM/Interfaces/IClientService.cs
+    startLine: 15
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: Task GetBalance(int accountId)
+    parameters:
+    - id: accountId
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function GetBalance(accountId As Integer) As Task
+  overload: ATMApp.Interfaces.IClientService.GetBalance*
+  nameWithType.vb: IClientService.GetBalance(Integer)
+  fullName.vb: ATMApp.Interfaces.IClientService.GetBalance(Integer)
+  name.vb: GetBalance(Integer)
+- uid: ATMApp.Interfaces.IClientService.GetTransactionHistory(System.Int32)
+  commentId: M:ATMApp.Interfaces.IClientService.GetTransactionHistory(System.Int32)
+  id: GetTransactionHistory(System.Int32)
+  parent: ATMApp.Interfaces.IClientService
+  langs:
+  - csharp
+  - vb
+  name: GetTransactionHistory(int)
+  nameWithType: IClientService.GetTransactionHistory(int)
+  fullName: ATMApp.Interfaces.IClientService.GetTransactionHistory(int)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IClientService.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: GetTransactionHistory
+    path: ATM/Interfaces/IClientService.cs
+    startLine: 17
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: Task<List<Transaction>> GetTransactionHistory(int accountId)
+    parameters:
+    - id: accountId
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{ATMApp.Models.Transaction}}
+    content.vb: Function GetTransactionHistory(accountId As Integer) As Task(Of List(Of Transaction))
+  overload: ATMApp.Interfaces.IClientService.GetTransactionHistory*
+  nameWithType.vb: IClientService.GetTransactionHistory(Integer)
+  fullName.vb: ATMApp.Interfaces.IClientService.GetTransactionHistory(Integer)
+  name.vb: GetTransactionHistory(Integer)
+references:
+- uid: ATMApp.Interfaces
+  commentId: N:ATMApp.Interfaces
+  href: ATMApp.html
+  name: ATMApp.Interfaces
+  nameWithType: ATMApp.Interfaces
+  fullName: ATMApp.Interfaces
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Interfaces
+    name: Interfaces
+    href: ATMApp.Interfaces.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Interfaces
+    name: Interfaces
+    href: ATMApp.Interfaces.html
+- uid: ATMApp.Interfaces.IClientService.Deposit*
+  commentId: Overload:ATMApp.Interfaces.IClientService.Deposit
+  href: ATMApp.Interfaces.IClientService.html#ATMApp_Interfaces_IClientService_Deposit_System_Int32_System_Decimal_
+  name: Deposit
+  nameWithType: IClientService.Deposit
+  fullName: ATMApp.Interfaces.IClientService.Deposit
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: ATMApp.Interfaces.IClientService.Withdraw*
+  commentId: Overload:ATMApp.Interfaces.IClientService.Withdraw
+  href: ATMApp.Interfaces.IClientService.html#ATMApp_Interfaces_IClientService_Withdraw_System_Int32_System_Decimal_
+  name: Withdraw
+  nameWithType: IClientService.Withdraw
+  fullName: ATMApp.Interfaces.IClientService.Withdraw
+- uid: ATMApp.Interfaces.IClientService.GetBalance*
+  commentId: Overload:ATMApp.Interfaces.IClientService.GetBalance
+  href: ATMApp.Interfaces.IClientService.html#ATMApp_Interfaces_IClientService_GetBalance_System_Int32_
+  name: GetBalance
+  nameWithType: IClientService.GetBalance
+  fullName: ATMApp.Interfaces.IClientService.GetBalance
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: ATMApp.Interfaces.IClientService.GetTransactionHistory*
+  commentId: Overload:ATMApp.Interfaces.IClientService.GetTransactionHistory
+  href: ATMApp.Interfaces.IClientService.html#ATMApp_Interfaces_IClientService_GetTransactionHistory_System_Int32_
+  name: GetTransactionHistory
+  nameWithType: IClientService.GetTransactionHistory
+  fullName: ATMApp.Interfaces.IClientService.GetTransactionHistory
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{ATMApp.Models.Transaction}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{ATMApp.Models.Transaction}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<Transaction>>
+  nameWithType: Task<List<Transaction>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<ATMApp.Models.Transaction>>
+  nameWithType.vb: Task(Of List(Of Transaction))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of ATMApp.Models.Transaction))
+  name.vb: Task(Of List(Of Transaction))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: ATMApp.Models.Transaction
+    name: Transaction
+    href: ATMApp.Models.Transaction.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ATMApp.Models.Transaction
+    name: Transaction
+    href: ATMApp.Models.Transaction.html
+  - name: )
+  - name: )

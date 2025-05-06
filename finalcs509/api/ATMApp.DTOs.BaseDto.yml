@@ -1,0 +1,485 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.DTOs.BaseDto
+  commentId: T:ATMApp.DTOs.BaseDto
+  id: BaseDto
+  parent: ATMApp.DTOs
+  children:
+  - ATMApp.DTOs.BaseDto.HolderName
+  - ATMApp.DTOs.BaseDto.Login
+  - ATMApp.DTOs.BaseDto.PinCode
+  - ATMApp.DTOs.BaseDto.Role
+  langs:
+  - csharp
+  - vb
+  name: BaseDto
+  nameWithType: BaseDto
+  fullName: ATMApp.DTOs.BaseDto
+  type: Class
+  source:
+    remote:
+      path: DTOs/BaseDtoForCReate&UpdateDto.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: BaseDto
+    path: ATM/DTOs/BaseDtoForCReate&UpdateDto.cs
+    startLine: 8
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.DTOs
+  syntax:
+    content: public class BaseDto
+    content.vb: Public Class BaseDto
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - ATMApp.DTOs.CreateUserDto
+  - ATMApp.DTOs.UpdateUserDto
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ATMApp.DTOs.BaseDto.Login
+  commentId: P:ATMApp.DTOs.BaseDto.Login
+  id: Login
+  parent: ATMApp.DTOs.BaseDto
+  langs:
+  - csharp
+  - vb
+  name: Login
+  nameWithType: BaseDto.Login
+  fullName: ATMApp.DTOs.BaseDto.Login
+  type: Property
+  source:
+    remote:
+      path: DTOs/BaseDtoForCReate&UpdateDto.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Login
+    path: ATM/DTOs/BaseDtoForCReate&UpdateDto.cs
+    startLine: 10
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.DTOs
+  syntax:
+    content: public string Login { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Login As String
+  overload: ATMApp.DTOs.BaseDto.Login*
+- uid: ATMApp.DTOs.BaseDto.PinCode
+  commentId: P:ATMApp.DTOs.BaseDto.PinCode
+  id: PinCode
+  parent: ATMApp.DTOs.BaseDto
+  langs:
+  - csharp
+  - vb
+  name: PinCode
+  nameWithType: BaseDto.PinCode
+  fullName: ATMApp.DTOs.BaseDto.PinCode
+  type: Property
+  source:
+    remote:
+      path: DTOs/BaseDtoForCReate&UpdateDto.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: PinCode
+    path: ATM/DTOs/BaseDtoForCReate&UpdateDto.cs
+    startLine: 12
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.DTOs
+  syntax:
+    content: public string PinCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PinCode As String
+  overload: ATMApp.DTOs.BaseDto.PinCode*
+- uid: ATMApp.DTOs.BaseDto.HolderName
+  commentId: P:ATMApp.DTOs.BaseDto.HolderName
+  id: HolderName
+  parent: ATMApp.DTOs.BaseDto
+  langs:
+  - csharp
+  - vb
+  name: HolderName
+  nameWithType: BaseDto.HolderName
+  fullName: ATMApp.DTOs.BaseDto.HolderName
+  type: Property
+  source:
+    remote:
+      path: DTOs/BaseDtoForCReate&UpdateDto.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: HolderName
+    path: ATM/DTOs/BaseDtoForCReate&UpdateDto.cs
+    startLine: 14
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.DTOs
+  syntax:
+    content: public string HolderName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property HolderName As String
+  overload: ATMApp.DTOs.BaseDto.HolderName*
+- uid: ATMApp.DTOs.BaseDto.Role
+  commentId: P:ATMApp.DTOs.BaseDto.Role
+  id: Role
+  parent: ATMApp.DTOs.BaseDto
+  langs:
+  - csharp
+  - vb
+  name: Role
+  nameWithType: BaseDto.Role
+  fullName: ATMApp.DTOs.BaseDto.Role
+  type: Property
+  source:
+    remote:
+      path: DTOs/BaseDtoForCReate&UpdateDto.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Role
+    path: ATM/DTOs/BaseDtoForCReate&UpdateDto.cs
+    startLine: 16
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.DTOs
+  syntax:
+    content: public UserRole Role { get; set; }
+    parameters: []
+    return:
+      type: ATMApp.Models.UserRole
+    content.vb: Public Property Role As UserRole
+  overload: ATMApp.DTOs.BaseDto.Role*
+references:
+- uid: ATMApp.DTOs
+  commentId: N:ATMApp.DTOs
+  href: ATMApp.html
+  name: ATMApp.DTOs
+  nameWithType: ATMApp.DTOs
+  fullName: ATMApp.DTOs
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.DTOs
+    name: DTOs
+    href: ATMApp.DTOs.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.DTOs
+    name: DTOs
+    href: ATMApp.DTOs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ATMApp.DTOs.BaseDto.Login*
+  commentId: Overload:ATMApp.DTOs.BaseDto.Login
+  href: ATMApp.DTOs.BaseDto.html#ATMApp_DTOs_BaseDto_Login
+  name: Login
+  nameWithType: BaseDto.Login
+  fullName: ATMApp.DTOs.BaseDto.Login
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ATMApp.DTOs.BaseDto.PinCode*
+  commentId: Overload:ATMApp.DTOs.BaseDto.PinCode
+  href: ATMApp.DTOs.BaseDto.html#ATMApp_DTOs_BaseDto_PinCode
+  name: PinCode
+  nameWithType: BaseDto.PinCode
+  fullName: ATMApp.DTOs.BaseDto.PinCode
+- uid: ATMApp.DTOs.BaseDto.HolderName*
+  commentId: Overload:ATMApp.DTOs.BaseDto.HolderName
+  href: ATMApp.DTOs.BaseDto.html#ATMApp_DTOs_BaseDto_HolderName
+  name: HolderName
+  nameWithType: BaseDto.HolderName
+  fullName: ATMApp.DTOs.BaseDto.HolderName
+- uid: ATMApp.DTOs.BaseDto.Role*
+  commentId: Overload:ATMApp.DTOs.BaseDto.Role
+  href: ATMApp.DTOs.BaseDto.html#ATMApp_DTOs_BaseDto_Role
+  name: Role
+  nameWithType: BaseDto.Role
+  fullName: ATMApp.DTOs.BaseDto.Role
+- uid: ATMApp.Models.UserRole
+  commentId: T:ATMApp.Models.UserRole
+  parent: ATMApp.Models
+  href: ATMApp.Models.UserRole.html
+  name: UserRole
+  nameWithType: UserRole
+  fullName: ATMApp.Models.UserRole
+- uid: ATMApp.Models
+  commentId: N:ATMApp.Models
+  href: ATMApp.html
+  name: ATMApp.Models
+  nameWithType: ATMApp.Models
+  fullName: ATMApp.Models
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html

@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Services
+  commentId: N:ATMApp.Services
+  id: ATMApp.Services
+  children:
+  - ATMApp.Services.AdminServices
+  - ATMApp.Services.AuthService
+  - ATMApp.Services.ClientService
+  langs:
+  - csharp
+  - vb
+  name: ATMApp.Services
+  nameWithType: ATMApp.Services
+  fullName: ATMApp.Services
+  type: Namespace
+  assemblies:
+  - ATMApp
+references:
+- uid: ATMApp.Services.AdminServices
+  commentId: T:ATMApp.Services.AdminServices
+  href: ATMApp.Services.AdminServices.html
+  name: AdminServices
+  nameWithType: AdminServices
+  fullName: ATMApp.Services.AdminServices
+- uid: ATMApp.Services.AuthService
+  commentId: T:ATMApp.Services.AuthService
+  href: ATMApp.Services.AuthService.html
+  name: AuthService
+  nameWithType: AuthService
+  fullName: ATMApp.Services.AuthService
+- uid: ATMApp.Services.ClientService
+  commentId: T:ATMApp.Services.ClientService
+  href: ATMApp.Services.ClientService.html
+  name: ClientService
+  nameWithType: ClientService
+  fullName: ATMApp.Services.ClientService

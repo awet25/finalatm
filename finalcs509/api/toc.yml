@@ -1,0 +1,135 @@
+### YamlMime:TableOfContent
+items:
+- uid: ATMApp.DTOs
+  name: ATMApp.DTOs
+  type: Namespace
+  items:
+  - uid: ATMApp.DTOs.BalanceResultDto
+    name: BalanceResultDto
+    type: Class
+  - uid: ATMApp.DTOs.BaseDto
+    name: BaseDto
+    type: Class
+  - uid: ATMApp.DTOs.CreateAccountDto
+    name: CreateAccountDto
+    type: Class
+  - uid: ATMApp.DTOs.CreateUserDto
+    name: CreateUserDto
+    type: Class
+  - uid: ATMApp.DTOs.UpdateUserDto
+    name: UpdateUserDto
+    type: Class
+  - uid: ATMApp.DTOs.UserLoginDTO
+    name: UserLoginDTO
+    type: Class
+- uid: ATMApp.Data
+  name: ATMApp.Data
+  type: Namespace
+  items:
+  - uid: ATMApp.Data.ATMContext
+    name: ATMContext
+    type: Class
+  - uid: ATMApp.Data.ATMContextFactory
+    name: ATMContextFactory
+    type: Class
+- uid: ATMApp.Interfaces
+  name: ATMApp.Interfaces
+  type: Namespace
+  items:
+  - uid: ATMApp.Interfaces.IAccountRepository
+    name: IAccountRepository
+    type: Interface
+  - uid: ATMApp.Interfaces.IAdminservices
+    name: IAdminservices
+    type: Interface
+  - uid: ATMApp.Interfaces.IAuthService
+    name: IAuthService
+    type: Interface
+  - uid: ATMApp.Interfaces.IClientService
+    name: IClientService
+    type: Interface
+  - uid: ATMApp.Interfaces.ITransactionRepository
+    name: ITransactionRepository
+    type: Interface
+  - uid: ATMApp.Interfaces.Iuser
+    name: Iuser
+    type: Interface
+- uid: ATMApp.Migrations
+  name: ATMApp.Migrations
+  type: Namespace
+  items:
+  - uid: ATMApp.Migrations.CreateTablesAndRelations
+    name: CreateTablesAndRelations
+    type: Class
+- uid: ATMApp.Models
+  name: ATMApp.Models
+  type: Namespace
+  items:
+  - uid: ATMApp.Models.Account
+    name: Account
+    type: Class
+  - uid: ATMApp.Models.AccountStatus
+    name: AccountStatus
+    type: Enum
+  - uid: ATMApp.Models.Transaction
+    name: Transaction
+    type: Class
+  - uid: ATMApp.Models.TransactionType
+    name: TransactionType
+    type: Enum
+  - uid: ATMApp.Models.User
+    name: User
+    type: Class
+  - uid: ATMApp.Models.UserRole
+    name: UserRole
+    type: Enum
+- uid: ATMApp.Repositories
+  name: ATMApp.Repositories
+  type: Namespace
+  items:
+  - uid: ATMApp.Repositories.AccountRepository
+    name: AccountRepository
+    type: Class
+  - uid: ATMApp.Repositories.IUserRepository
+    name: IUserRepository
+    type: Interface
+  - uid: ATMApp.Repositories.TransactionRepository
+    name: TransactionRepository
+    type: Class
+  - uid: ATMApp.Repositories.UserRepository
+    name: UserRepository
+    type: Class
+- uid: ATMApp.Services
+  name: ATMApp.Services
+  type: Namespace
+  items:
+  - uid: ATMApp.Services.AdminServices
+    name: AdminServices
+    type: Class
+  - uid: ATMApp.Services.AuthService
+    name: AuthService
+    type: Class
+  - uid: ATMApp.Services.ClientService
+    name: ClientService
+    type: Class
+- uid: ATMApp.Validators
+  name: ATMApp.Validators
+  type: Namespace
+  items:
+  - uid: ATMApp.Validators.AddNewuserValidator
+    name: AddNewuserValidator
+    type: Class
+  - uid: ATMApp.Validators.UserLoginValidator
+    name: UserLoginValidator
+    type: Class
+- uid: ATMApp.Views
+  name: ATMApp.Views
+  type: Namespace
+  items:
+  - uid: ATMApp.Views.AdminView
+    name: AdminView
+    type: Class
+  - uid: ATMApp.Views.ClientView
+    name: ClientView
+    type: Class
+memberLayout: SamePage

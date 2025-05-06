@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Models.AccountStatus
+  commentId: T:ATMApp.Models.AccountStatus
+  id: AccountStatus
+  parent: ATMApp.Models
+  children:
+  - ATMApp.Models.AccountStatus.Active
+  - ATMApp.Models.AccountStatus.Disabled
+  langs:
+  - csharp
+  - vb
+  name: AccountStatus
+  nameWithType: AccountStatus
+  fullName: ATMApp.Models.AccountStatus
+  type: Enum
+  source:
+    remote:
+      path: Models/Account.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: AccountStatus
+    path: ATM/Models/Account.cs
+    startLine: 21
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Models
+  syntax:
+    content: public enum AccountStatus
+    content.vb: Public Enum AccountStatus
+- uid: ATMApp.Models.AccountStatus.Active
+  commentId: F:ATMApp.Models.AccountStatus.Active
+  id: Active
+  parent: ATMApp.Models.AccountStatus
+  langs:
+  - csharp
+  - vb
+  name: Active
+  nameWithType: AccountStatus.Active
+  fullName: ATMApp.Models.AccountStatus.Active
+  type: Field
+  source:
+    remote:
+      path: Models/Account.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Active
+    path: ATM/Models/Account.cs
+    startLine: 23
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Models
+  syntax:
+    content: Active = 0
+    return:
+      type: ATMApp.Models.AccountStatus
+- uid: ATMApp.Models.AccountStatus.Disabled
+  commentId: F:ATMApp.Models.AccountStatus.Disabled
+  id: Disabled
+  parent: ATMApp.Models.AccountStatus
+  langs:
+  - csharp
+  - vb
+  name: Disabled
+  nameWithType: AccountStatus.Disabled
+  fullName: ATMApp.Models.AccountStatus.Disabled
+  type: Field
+  source:
+    remote:
+      path: Models/Account.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Disabled
+    path: ATM/Models/Account.cs
+    startLine: 24
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Models
+  syntax:
+    content: Disabled = 1
+    return:
+      type: ATMApp.Models.AccountStatus
+references:
+- uid: ATMApp.Models
+  commentId: N:ATMApp.Models
+  href: ATMApp.html
+  name: ATMApp.Models
+  nameWithType: ATMApp.Models
+  fullName: ATMApp.Models
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html
+- uid: ATMApp.Models.AccountStatus
+  commentId: T:ATMApp.Models.AccountStatus
+  parent: ATMApp.Models
+  href: ATMApp.Models.AccountStatus.html
+  name: AccountStatus
+  nameWithType: AccountStatus
+  fullName: ATMApp.Models.AccountStatus

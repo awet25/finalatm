@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Models.UserRole
+  commentId: T:ATMApp.Models.UserRole
+  id: UserRole
+  parent: ATMApp.Models
+  children:
+  - ATMApp.Models.UserRole.Admin
+  - ATMApp.Models.UserRole.Client
+  langs:
+  - csharp
+  - vb
+  name: UserRole
+  nameWithType: UserRole
+  fullName: ATMApp.Models.UserRole
+  type: Enum
+  source:
+    remote:
+      path: Models/User.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: UserRole
+    path: ATM/Models/User.cs
+    startLine: 23
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Models
+  syntax:
+    content: public enum UserRole
+    content.vb: Public Enum UserRole
+- uid: ATMApp.Models.UserRole.Client
+  commentId: F:ATMApp.Models.UserRole.Client
+  id: Client
+  parent: ATMApp.Models.UserRole
+  langs:
+  - csharp
+  - vb
+  name: Client
+  nameWithType: UserRole.Client
+  fullName: ATMApp.Models.UserRole.Client
+  type: Field
+  source:
+    remote:
+      path: Models/User.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Client
+    path: ATM/Models/User.cs
+    startLine: 25
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Models
+  syntax:
+    content: Client = 0
+    return:
+      type: ATMApp.Models.UserRole
+- uid: ATMApp.Models.UserRole.Admin
+  commentId: F:ATMApp.Models.UserRole.Admin
+  id: Admin
+  parent: ATMApp.Models.UserRole
+  langs:
+  - csharp
+  - vb
+  name: Admin
+  nameWithType: UserRole.Admin
+  fullName: ATMApp.Models.UserRole.Admin
+  type: Field
+  source:
+    remote:
+      path: Models/User.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Admin
+    path: ATM/Models/User.cs
+    startLine: 26
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Models
+  syntax:
+    content: Admin = 1
+    return:
+      type: ATMApp.Models.UserRole
+references:
+- uid: ATMApp.Models
+  commentId: N:ATMApp.Models
+  href: ATMApp.html
+  name: ATMApp.Models
+  nameWithType: ATMApp.Models
+  fullName: ATMApp.Models
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html
+- uid: ATMApp.Models.UserRole
+  commentId: T:ATMApp.Models.UserRole
+  parent: ATMApp.Models
+  href: ATMApp.Models.UserRole.html
+  name: UserRole
+  nameWithType: UserRole
+  fullName: ATMApp.Models.UserRole

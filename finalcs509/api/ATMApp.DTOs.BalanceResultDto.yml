@@ -1,0 +1,538 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.DTOs.BalanceResultDto
+  commentId: T:ATMApp.DTOs.BalanceResultDto
+  id: BalanceResultDto
+  parent: ATMApp.DTOs
+  children:
+  - ATMApp.DTOs.BalanceResultDto.AccountId
+  - ATMApp.DTOs.BalanceResultDto.Balance
+  - ATMApp.DTOs.BalanceResultDto.Message
+  - ATMApp.DTOs.BalanceResultDto.Success
+  langs:
+  - csharp
+  - vb
+  name: BalanceResultDto
+  nameWithType: BalanceResultDto
+  fullName: ATMApp.DTOs.BalanceResultDto
+  type: Class
+  source:
+    remote:
+      path: DTOs/BalanceResultDto.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: BalanceResultDto
+    path: ATM/DTOs/BalanceResultDto.cs
+    startLine: 6
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.DTOs
+  syntax:
+    content: public class BalanceResultDto
+    content.vb: Public Class BalanceResultDto
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ATMApp.DTOs.BalanceResultDto.Success
+  commentId: P:ATMApp.DTOs.BalanceResultDto.Success
+  id: Success
+  parent: ATMApp.DTOs.BalanceResultDto
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: BalanceResultDto.Success
+  fullName: ATMApp.DTOs.BalanceResultDto.Success
+  type: Property
+  source:
+    remote:
+      path: DTOs/BalanceResultDto.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Success
+    path: ATM/DTOs/BalanceResultDto.cs
+    startLine: 8
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.DTOs
+  syntax:
+    content: public bool Success { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Success As Boolean
+  overload: ATMApp.DTOs.BalanceResultDto.Success*
+- uid: ATMApp.DTOs.BalanceResultDto.Message
+  commentId: P:ATMApp.DTOs.BalanceResultDto.Message
+  id: Message
+  parent: ATMApp.DTOs.BalanceResultDto
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: BalanceResultDto.Message
+  fullName: ATMApp.DTOs.BalanceResultDto.Message
+  type: Property
+  source:
+    remote:
+      path: DTOs/BalanceResultDto.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Message
+    path: ATM/DTOs/BalanceResultDto.cs
+    startLine: 10
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.DTOs
+  syntax:
+    content: public string Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Message As String
+  overload: ATMApp.DTOs.BalanceResultDto.Message*
+- uid: ATMApp.DTOs.BalanceResultDto.Balance
+  commentId: P:ATMApp.DTOs.BalanceResultDto.Balance
+  id: Balance
+  parent: ATMApp.DTOs.BalanceResultDto
+  langs:
+  - csharp
+  - vb
+  name: Balance
+  nameWithType: BalanceResultDto.Balance
+  fullName: ATMApp.DTOs.BalanceResultDto.Balance
+  type: Property
+  source:
+    remote:
+      path: DTOs/BalanceResultDto.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Balance
+    path: ATM/DTOs/BalanceResultDto.cs
+    startLine: 12
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.DTOs
+  syntax:
+    content: public decimal? Balance { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+    content.vb: Public Property Balance As Decimal?
+  overload: ATMApp.DTOs.BalanceResultDto.Balance*
+- uid: ATMApp.DTOs.BalanceResultDto.AccountId
+  commentId: P:ATMApp.DTOs.BalanceResultDto.AccountId
+  id: AccountId
+  parent: ATMApp.DTOs.BalanceResultDto
+  langs:
+  - csharp
+  - vb
+  name: AccountId
+  nameWithType: BalanceResultDto.AccountId
+  fullName: ATMApp.DTOs.BalanceResultDto.AccountId
+  type: Property
+  source:
+    remote:
+      path: DTOs/BalanceResultDto.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: AccountId
+    path: ATM/DTOs/BalanceResultDto.cs
+    startLine: 14
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.DTOs
+  syntax:
+    content: public int? AccountId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property AccountId As Integer?
+  overload: ATMApp.DTOs.BalanceResultDto.AccountId*
+references:
+- uid: ATMApp.DTOs
+  commentId: N:ATMApp.DTOs
+  href: ATMApp.html
+  name: ATMApp.DTOs
+  nameWithType: ATMApp.DTOs
+  fullName: ATMApp.DTOs
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.DTOs
+    name: DTOs
+    href: ATMApp.DTOs.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.DTOs
+    name: DTOs
+    href: ATMApp.DTOs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ATMApp.DTOs.BalanceResultDto.Success*
+  commentId: Overload:ATMApp.DTOs.BalanceResultDto.Success
+  href: ATMApp.DTOs.BalanceResultDto.html#ATMApp_DTOs_BalanceResultDto_Success
+  name: Success
+  nameWithType: BalanceResultDto.Success
+  fullName: ATMApp.DTOs.BalanceResultDto.Success
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ATMApp.DTOs.BalanceResultDto.Message*
+  commentId: Overload:ATMApp.DTOs.BalanceResultDto.Message
+  href: ATMApp.DTOs.BalanceResultDto.html#ATMApp_DTOs_BalanceResultDto_Message
+  name: Message
+  nameWithType: BalanceResultDto.Message
+  fullName: ATMApp.DTOs.BalanceResultDto.Message
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ATMApp.DTOs.BalanceResultDto.Balance*
+  commentId: Overload:ATMApp.DTOs.BalanceResultDto.Balance
+  href: ATMApp.DTOs.BalanceResultDto.html#ATMApp_DTOs_BalanceResultDto_Balance
+  name: Balance
+  nameWithType: BalanceResultDto.Balance
+  fullName: ATMApp.DTOs.BalanceResultDto.Balance
+- uid: System.Nullable{System.Decimal}
+  commentId: T:System.Nullable{System.Decimal}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal?
+  nameWithType: decimal?
+  fullName: decimal?
+  nameWithType.vb: Decimal?
+  fullName.vb: Decimal?
+  name.vb: Decimal?
+  spec.csharp:
+  - uid: System.Decimal
+    name: decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: '?'
+  spec.vb:
+  - uid: System.Decimal
+    name: Decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: ATMApp.DTOs.BalanceResultDto.AccountId*
+  commentId: Overload:ATMApp.DTOs.BalanceResultDto.AccountId
+  href: ATMApp.DTOs.BalanceResultDto.html#ATMApp_DTOs_BalanceResultDto_AccountId
+  name: AccountId
+  nameWithType: BalanceResultDto.AccountId
+  fullName: ATMApp.DTOs.BalanceResultDto.AccountId
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'

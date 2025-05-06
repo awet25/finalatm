@@ -1,0 +1,482 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Repositories.IUserRepository
+  commentId: T:ATMApp.Repositories.IUserRepository
+  id: IUserRepository
+  parent: ATMApp.Repositories
+  children:
+  - ATMApp.Repositories.IUserRepository.AddUser(ATMApp.Models.User)
+  - ATMApp.Repositories.IUserRepository.DeleteUserbyId(System.Int32)
+  - ATMApp.Repositories.IUserRepository.GetUserById(System.Int32)
+  - ATMApp.Repositories.IUserRepository.GetUserBylogin(System.String)
+  - ATMApp.Repositories.IUserRepository.GetUserWithAccountByLogin(System.String)
+  - ATMApp.Repositories.IUserRepository.UpdateUser(ATMApp.Models.User)
+  langs:
+  - csharp
+  - vb
+  name: IUserRepository
+  nameWithType: IUserRepository
+  fullName: ATMApp.Repositories.IUserRepository
+  type: Interface
+  source:
+    remote:
+      path: Interfaces/IUserRepositories.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: IUserRepository
+    path: ATM/Interfaces/IUserRepositories.cs
+    startLine: 9
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  syntax:
+    content: public interface IUserRepository
+    content.vb: Public Interface IUserRepository
+- uid: ATMApp.Repositories.IUserRepository.GetUserBylogin(System.String)
+  commentId: M:ATMApp.Repositories.IUserRepository.GetUserBylogin(System.String)
+  id: GetUserBylogin(System.String)
+  parent: ATMApp.Repositories.IUserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetUserBylogin(string)
+  nameWithType: IUserRepository.GetUserBylogin(string)
+  fullName: ATMApp.Repositories.IUserRepository.GetUserBylogin(string)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IUserRepositories.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: GetUserBylogin
+    path: ATM/Interfaces/IUserRepositories.cs
+    startLine: 11
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  syntax:
+    content: Task<User> GetUserBylogin(string login)
+    parameters:
+    - id: login
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{ATMApp.Models.User}
+    content.vb: Function GetUserBylogin(login As String) As Task(Of User)
+  overload: ATMApp.Repositories.IUserRepository.GetUserBylogin*
+  nameWithType.vb: IUserRepository.GetUserBylogin(String)
+  fullName.vb: ATMApp.Repositories.IUserRepository.GetUserBylogin(String)
+  name.vb: GetUserBylogin(String)
+- uid: ATMApp.Repositories.IUserRepository.GetUserById(System.Int32)
+  commentId: M:ATMApp.Repositories.IUserRepository.GetUserById(System.Int32)
+  id: GetUserById(System.Int32)
+  parent: ATMApp.Repositories.IUserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetUserById(int)
+  nameWithType: IUserRepository.GetUserById(int)
+  fullName: ATMApp.Repositories.IUserRepository.GetUserById(int)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IUserRepositories.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: GetUserById
+    path: ATM/Interfaces/IUserRepositories.cs
+    startLine: 13
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  syntax:
+    content: Task<User> GetUserById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{ATMApp.Models.User}
+    content.vb: Function GetUserById(id As Integer) As Task(Of User)
+  overload: ATMApp.Repositories.IUserRepository.GetUserById*
+  nameWithType.vb: IUserRepository.GetUserById(Integer)
+  fullName.vb: ATMApp.Repositories.IUserRepository.GetUserById(Integer)
+  name.vb: GetUserById(Integer)
+- uid: ATMApp.Repositories.IUserRepository.AddUser(ATMApp.Models.User)
+  commentId: M:ATMApp.Repositories.IUserRepository.AddUser(ATMApp.Models.User)
+  id: AddUser(ATMApp.Models.User)
+  parent: ATMApp.Repositories.IUserRepository
+  langs:
+  - csharp
+  - vb
+  name: AddUser(User)
+  nameWithType: IUserRepository.AddUser(User)
+  fullName: ATMApp.Repositories.IUserRepository.AddUser(ATMApp.Models.User)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IUserRepositories.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: AddUser
+    path: ATM/Interfaces/IUserRepositories.cs
+    startLine: 15
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  syntax:
+    content: Task<User> AddUser(User newUser)
+    parameters:
+    - id: newUser
+      type: ATMApp.Models.User
+    return:
+      type: System.Threading.Tasks.Task{ATMApp.Models.User}
+    content.vb: Function AddUser(newUser As User) As Task(Of User)
+  overload: ATMApp.Repositories.IUserRepository.AddUser*
+- uid: ATMApp.Repositories.IUserRepository.DeleteUserbyId(System.Int32)
+  commentId: M:ATMApp.Repositories.IUserRepository.DeleteUserbyId(System.Int32)
+  id: DeleteUserbyId(System.Int32)
+  parent: ATMApp.Repositories.IUserRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteUserbyId(int)
+  nameWithType: IUserRepository.DeleteUserbyId(int)
+  fullName: ATMApp.Repositories.IUserRepository.DeleteUserbyId(int)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IUserRepositories.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: DeleteUserbyId
+    path: ATM/Interfaces/IUserRepositories.cs
+    startLine: 17
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  syntax:
+    content: Task<bool> DeleteUserbyId(int userId)
+    parameters:
+    - id: userId
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function DeleteUserbyId(userId As Integer) As Task(Of Boolean)
+  overload: ATMApp.Repositories.IUserRepository.DeleteUserbyId*
+  nameWithType.vb: IUserRepository.DeleteUserbyId(Integer)
+  fullName.vb: ATMApp.Repositories.IUserRepository.DeleteUserbyId(Integer)
+  name.vb: DeleteUserbyId(Integer)
+- uid: ATMApp.Repositories.IUserRepository.UpdateUser(ATMApp.Models.User)
+  commentId: M:ATMApp.Repositories.IUserRepository.UpdateUser(ATMApp.Models.User)
+  id: UpdateUser(ATMApp.Models.User)
+  parent: ATMApp.Repositories.IUserRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateUser(User)
+  nameWithType: IUserRepository.UpdateUser(User)
+  fullName: ATMApp.Repositories.IUserRepository.UpdateUser(ATMApp.Models.User)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IUserRepositories.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: UpdateUser
+    path: ATM/Interfaces/IUserRepositories.cs
+    startLine: 19
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  syntax:
+    content: Task<bool> UpdateUser(User user)
+    parameters:
+    - id: user
+      type: ATMApp.Models.User
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function UpdateUser(user As User) As Task(Of Boolean)
+  overload: ATMApp.Repositories.IUserRepository.UpdateUser*
+- uid: ATMApp.Repositories.IUserRepository.GetUserWithAccountByLogin(System.String)
+  commentId: M:ATMApp.Repositories.IUserRepository.GetUserWithAccountByLogin(System.String)
+  id: GetUserWithAccountByLogin(System.String)
+  parent: ATMApp.Repositories.IUserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetUserWithAccountByLogin(string)
+  nameWithType: IUserRepository.GetUserWithAccountByLogin(string)
+  fullName: ATMApp.Repositories.IUserRepository.GetUserWithAccountByLogin(string)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IUserRepositories.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: GetUserWithAccountByLogin
+    path: ATM/Interfaces/IUserRepositories.cs
+    startLine: 21
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  syntax:
+    content: Task<User?> GetUserWithAccountByLogin(string login)
+    parameters:
+    - id: login
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{ATMApp.Models.User}
+    content.vb: Function GetUserWithAccountByLogin(login As String) As Task(Of User)
+  overload: ATMApp.Repositories.IUserRepository.GetUserWithAccountByLogin*
+  nameWithType.vb: IUserRepository.GetUserWithAccountByLogin(String)
+  fullName.vb: ATMApp.Repositories.IUserRepository.GetUserWithAccountByLogin(String)
+  name.vb: GetUserWithAccountByLogin(String)
+references:
+- uid: ATMApp.Repositories
+  commentId: N:ATMApp.Repositories
+  href: ATMApp.html
+  name: ATMApp.Repositories
+  nameWithType: ATMApp.Repositories
+  fullName: ATMApp.Repositories
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Repositories
+    name: Repositories
+    href: ATMApp.Repositories.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Repositories
+    name: Repositories
+    href: ATMApp.Repositories.html
+- uid: ATMApp.Repositories.IUserRepository.GetUserBylogin*
+  commentId: Overload:ATMApp.Repositories.IUserRepository.GetUserBylogin
+  href: ATMApp.Repositories.IUserRepository.html#ATMApp_Repositories_IUserRepository_GetUserBylogin_System_String_
+  name: GetUserBylogin
+  nameWithType: IUserRepository.GetUserBylogin
+  fullName: ATMApp.Repositories.IUserRepository.GetUserBylogin
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{ATMApp.Models.User}
+  commentId: T:System.Threading.Tasks.Task{ATMApp.Models.User}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<User>
+  nameWithType: Task<User>
+  fullName: System.Threading.Tasks.Task<ATMApp.Models.User>
+  nameWithType.vb: Task(Of User)
+  fullName.vb: System.Threading.Tasks.Task(Of ATMApp.Models.User)
+  name.vb: Task(Of User)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: ATMApp.Models.User
+    name: User
+    href: ATMApp.Models.User.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ATMApp.Models.User
+    name: User
+    href: ATMApp.Models.User.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: ATMApp.Repositories.IUserRepository.GetUserById*
+  commentId: Overload:ATMApp.Repositories.IUserRepository.GetUserById
+  href: ATMApp.Repositories.IUserRepository.html#ATMApp_Repositories_IUserRepository_GetUserById_System_Int32_
+  name: GetUserById
+  nameWithType: IUserRepository.GetUserById
+  fullName: ATMApp.Repositories.IUserRepository.GetUserById
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ATMApp.Repositories.IUserRepository.AddUser*
+  commentId: Overload:ATMApp.Repositories.IUserRepository.AddUser
+  href: ATMApp.Repositories.IUserRepository.html#ATMApp_Repositories_IUserRepository_AddUser_ATMApp_Models_User_
+  name: AddUser
+  nameWithType: IUserRepository.AddUser
+  fullName: ATMApp.Repositories.IUserRepository.AddUser
+- uid: ATMApp.Models.User
+  commentId: T:ATMApp.Models.User
+  parent: ATMApp.Models
+  href: ATMApp.Models.User.html
+  name: User
+  nameWithType: User
+  fullName: ATMApp.Models.User
+- uid: ATMApp.Models
+  commentId: N:ATMApp.Models
+  href: ATMApp.html
+  name: ATMApp.Models
+  nameWithType: ATMApp.Models
+  fullName: ATMApp.Models
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html
+- uid: ATMApp.Repositories.IUserRepository.DeleteUserbyId*
+  commentId: Overload:ATMApp.Repositories.IUserRepository.DeleteUserbyId
+  href: ATMApp.Repositories.IUserRepository.html#ATMApp_Repositories_IUserRepository_DeleteUserbyId_System_Int32_
+  name: DeleteUserbyId
+  nameWithType: IUserRepository.DeleteUserbyId
+  fullName: ATMApp.Repositories.IUserRepository.DeleteUserbyId
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: ATMApp.Repositories.IUserRepository.UpdateUser*
+  commentId: Overload:ATMApp.Repositories.IUserRepository.UpdateUser
+  href: ATMApp.Repositories.IUserRepository.html#ATMApp_Repositories_IUserRepository_UpdateUser_ATMApp_Models_User_
+  name: UpdateUser
+  nameWithType: IUserRepository.UpdateUser
+  fullName: ATMApp.Repositories.IUserRepository.UpdateUser
+- uid: ATMApp.Repositories.IUserRepository.GetUserWithAccountByLogin*
+  commentId: Overload:ATMApp.Repositories.IUserRepository.GetUserWithAccountByLogin
+  href: ATMApp.Repositories.IUserRepository.html#ATMApp_Repositories_IUserRepository_GetUserWithAccountByLogin_System_String_
+  name: GetUserWithAccountByLogin
+  nameWithType: IUserRepository.GetUserWithAccountByLogin
+  fullName: ATMApp.Repositories.IUserRepository.GetUserWithAccountByLogin

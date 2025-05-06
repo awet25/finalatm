@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Validators
+  commentId: N:ATMApp.Validators
+  id: ATMApp.Validators
+  children:
+  - ATMApp.Validators.AddNewuserValidator
+  - ATMApp.Validators.UserLoginValidator
+  langs:
+  - csharp
+  - vb
+  name: ATMApp.Validators
+  nameWithType: ATMApp.Validators
+  fullName: ATMApp.Validators
+  type: Namespace
+  assemblies:
+  - ATMApp
+references:
+- uid: ATMApp.Validators.AddNewuserValidator
+  commentId: T:ATMApp.Validators.AddNewuserValidator
+  href: ATMApp.Validators.AddNewuserValidator.html
+  name: AddNewuserValidator
+  nameWithType: AddNewuserValidator
+  fullName: ATMApp.Validators.AddNewuserValidator
+- uid: ATMApp.Validators.UserLoginValidator
+  commentId: T:ATMApp.Validators.UserLoginValidator
+  href: ATMApp.Validators.UserLoginValidator.html
+  name: UserLoginValidator
+  nameWithType: UserLoginValidator
+  fullName: ATMApp.Validators.UserLoginValidator

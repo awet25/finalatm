@@ -1,0 +1,629 @@
+{
+  "source_base_path": "C:/Users/awetb/Documents/wpistudent/finalcs509",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.DTOs.BalanceResultDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.DTOs.BalanceResultDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.DTOs.BalanceResultDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.DTOs.BaseDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.DTOs.BaseDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.DTOs.BaseDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.DTOs.CreateAccountDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.DTOs.CreateAccountDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.DTOs.CreateAccountDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.DTOs.CreateUserDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.DTOs.CreateUserDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.DTOs.CreateUserDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.DTOs.UpdateUserDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.DTOs.UpdateUserDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.DTOs.UpdateUserDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.DTOs.UserLoginDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.DTOs.UserLoginDTO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.DTOs.UserLoginDTO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.DTOs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.DTOs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.DTOs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Data.ATMContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Data.ATMContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Data.ATMContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Data.ATMContextFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Data.ATMContextFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Data.ATMContextFactory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Data",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Interfaces.IAccountRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Interfaces.IAccountRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Interfaces.IAccountRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Interfaces.IAdminservices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Interfaces.IAdminservices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Interfaces.IAdminservices",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Interfaces.IAuthService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Interfaces.IAuthService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Interfaces.IAuthService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Interfaces.IClientService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Interfaces.IClientService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Interfaces.IClientService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Interfaces.ITransactionRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Interfaces.ITransactionRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Interfaces.ITransactionRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Interfaces.Iuser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Interfaces.Iuser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Interfaces.Iuser",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Migrations.CreateTablesAndRelations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Migrations.CreateTablesAndRelations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Migrations.CreateTablesAndRelations",
+      "Summary": "<p sourcefile=\"api/ATMApp.Migrations.CreateTablesAndRelations.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Migrations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Migrations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Models.Account.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Models.Account.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Models.Account",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Models.AccountStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Models.AccountStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Models.AccountStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Models.Transaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Models.Transaction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Models.Transaction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Models.TransactionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Models.TransactionType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Models.TransactionType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Models.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Models.User.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Models.User",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Models.UserRole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Models.UserRole.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Models.UserRole",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Repositories.AccountRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Repositories.AccountRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Repositories.AccountRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Repositories.IUserRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Repositories.IUserRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Repositories.IUserRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Repositories.TransactionRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Repositories.TransactionRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Repositories.TransactionRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Repositories.UserRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Repositories.UserRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Repositories.UserRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Repositories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Repositories.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Repositories",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Services.AdminServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Services.AdminServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Services.AdminServices",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Services.AuthService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Services.AuthService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Services.AuthService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Services.ClientService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Services.ClientService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Services.ClientService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Services.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Services",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Validators.AddNewuserValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Validators.AddNewuserValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Validators.AddNewuserValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Validators.UserLoginValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Validators.UserLoginValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Validators.UserLoginValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Validators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Validators.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Validators",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Views.AdminView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Views.AdminView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Views.AdminView",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Views.ClientView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Views.ClientView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Views.ClientView",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATMApp.Views.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATMApp.Views.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATMApp.Views",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

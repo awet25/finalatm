@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Data
+  commentId: N:ATMApp.Data
+  id: ATMApp.Data
+  children:
+  - ATMApp.Data.ATMContext
+  - ATMApp.Data.ATMContextFactory
+  langs:
+  - csharp
+  - vb
+  name: ATMApp.Data
+  nameWithType: ATMApp.Data
+  fullName: ATMApp.Data
+  type: Namespace
+  assemblies:
+  - ATMApp
+references:
+- uid: ATMApp.Data.ATMContext
+  commentId: T:ATMApp.Data.ATMContext
+  parent: ATMApp.Data
+  href: ATMApp.Data.ATMContext.html
+  name: ATMContext
+  nameWithType: ATMContext
+  fullName: ATMApp.Data.ATMContext
+- uid: ATMApp.Data.ATMContextFactory
+  commentId: T:ATMApp.Data.ATMContextFactory
+  href: ATMApp.Data.ATMContextFactory.html
+  name: ATMContextFactory
+  nameWithType: ATMContextFactory
+  fullName: ATMApp.Data.ATMContextFactory
+- uid: ATMApp.Data
+  commentId: N:ATMApp.Data
+  href: ATMApp.html
+  name: ATMApp.Data
+  nameWithType: ATMApp.Data
+  fullName: ATMApp.Data
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Data
+    name: Data
+    href: ATMApp.Data.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Data
+    name: Data
+    href: ATMApp.Data.html

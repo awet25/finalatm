@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Interfaces
+  commentId: N:ATMApp.Interfaces
+  id: ATMApp.Interfaces
+  children:
+  - ATMApp.Interfaces.IAccountRepository
+  - ATMApp.Interfaces.IAdminservices
+  - ATMApp.Interfaces.IAuthService
+  - ATMApp.Interfaces.IClientService
+  - ATMApp.Interfaces.ITransactionRepository
+  - ATMApp.Interfaces.Iuser
+  langs:
+  - csharp
+  - vb
+  name: ATMApp.Interfaces
+  nameWithType: ATMApp.Interfaces
+  fullName: ATMApp.Interfaces
+  type: Namespace
+  assemblies:
+  - ATMApp
+references:
+- uid: ATMApp.Interfaces.IAccountRepository
+  commentId: T:ATMApp.Interfaces.IAccountRepository
+  parent: ATMApp.Interfaces
+  href: ATMApp.Interfaces.IAccountRepository.html
+  name: IAccountRepository
+  nameWithType: IAccountRepository
+  fullName: ATMApp.Interfaces.IAccountRepository
+- uid: ATMApp.Interfaces.IAdminservices
+  commentId: T:ATMApp.Interfaces.IAdminservices
+  parent: ATMApp.Interfaces
+  href: ATMApp.Interfaces.IAdminservices.html
+  name: IAdminservices
+  nameWithType: IAdminservices
+  fullName: ATMApp.Interfaces.IAdminservices
+- uid: ATMApp.Interfaces.IAuthService
+  commentId: T:ATMApp.Interfaces.IAuthService
+  parent: ATMApp.Interfaces
+  href: ATMApp.Interfaces.IAuthService.html
+  name: IAuthService
+  nameWithType: IAuthService
+  fullName: ATMApp.Interfaces.IAuthService
+- uid: ATMApp.Interfaces.IClientService
+  commentId: T:ATMApp.Interfaces.IClientService
+  parent: ATMApp.Interfaces
+  href: ATMApp.Interfaces.IClientService.html
+  name: IClientService
+  nameWithType: IClientService
+  fullName: ATMApp.Interfaces.IClientService
+- uid: ATMApp.Interfaces.ITransactionRepository
+  commentId: T:ATMApp.Interfaces.ITransactionRepository
+  parent: ATMApp.Interfaces
+  href: ATMApp.Interfaces.ITransactionRepository.html
+  name: ITransactionRepository
+  nameWithType: ITransactionRepository
+  fullName: ATMApp.Interfaces.ITransactionRepository
+- uid: ATMApp.Interfaces.Iuser
+  commentId: T:ATMApp.Interfaces.Iuser
+  href: ATMApp.Interfaces.Iuser.html
+  name: Iuser
+  nameWithType: Iuser
+  fullName: ATMApp.Interfaces.Iuser
+- uid: ATMApp.Interfaces
+  commentId: N:ATMApp.Interfaces
+  href: ATMApp.html
+  name: ATMApp.Interfaces
+  nameWithType: ATMApp.Interfaces
+  fullName: ATMApp.Interfaces
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Interfaces
+    name: Interfaces
+    href: ATMApp.Interfaces.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Interfaces
+    name: Interfaces
+    href: ATMApp.Interfaces.html

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Migrations
+  commentId: N:ATMApp.Migrations
+  id: ATMApp.Migrations
+  children:
+  - ATMApp.Migrations.CreateTablesAndRelations
+  langs:
+  - csharp
+  - vb
+  name: ATMApp.Migrations
+  nameWithType: ATMApp.Migrations
+  fullName: ATMApp.Migrations
+  type: Namespace
+  assemblies:
+  - ATMApp
+references:
+- uid: ATMApp.Migrations.CreateTablesAndRelations
+  commentId: T:ATMApp.Migrations.CreateTablesAndRelations
+  href: ATMApp.Migrations.CreateTablesAndRelations.html
+  name: CreateTablesAndRelations
+  nameWithType: CreateTablesAndRelations
+  fullName: ATMApp.Migrations.CreateTablesAndRelations

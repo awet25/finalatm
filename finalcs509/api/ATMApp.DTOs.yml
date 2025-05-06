@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.DTOs
+  commentId: N:ATMApp.DTOs
+  id: ATMApp.DTOs
+  children:
+  - ATMApp.DTOs.BalanceResultDto
+  - ATMApp.DTOs.BaseDto
+  - ATMApp.DTOs.CreateAccountDto
+  - ATMApp.DTOs.CreateUserDto
+  - ATMApp.DTOs.UpdateUserDto
+  - ATMApp.DTOs.UserLoginDTO
+  langs:
+  - csharp
+  - vb
+  name: ATMApp.DTOs
+  nameWithType: ATMApp.DTOs
+  fullName: ATMApp.DTOs
+  type: Namespace
+  assemblies:
+  - ATMApp
+references:
+- uid: ATMApp.DTOs.BalanceResultDto
+  commentId: T:ATMApp.DTOs.BalanceResultDto
+  href: ATMApp.DTOs.BalanceResultDto.html
+  name: BalanceResultDto
+  nameWithType: BalanceResultDto
+  fullName: ATMApp.DTOs.BalanceResultDto
+- uid: ATMApp.DTOs.BaseDto
+  commentId: T:ATMApp.DTOs.BaseDto
+  parent: ATMApp.DTOs
+  href: ATMApp.DTOs.BaseDto.html
+  name: BaseDto
+  nameWithType: BaseDto
+  fullName: ATMApp.DTOs.BaseDto
+- uid: ATMApp.DTOs.CreateAccountDto
+  commentId: T:ATMApp.DTOs.CreateAccountDto
+  href: ATMApp.DTOs.CreateAccountDto.html
+  name: CreateAccountDto
+  nameWithType: CreateAccountDto
+  fullName: ATMApp.DTOs.CreateAccountDto
+- uid: ATMApp.DTOs.CreateUserDto
+  commentId: T:ATMApp.DTOs.CreateUserDto
+  parent: ATMApp.DTOs
+  href: ATMApp.DTOs.CreateUserDto.html
+  name: CreateUserDto
+  nameWithType: CreateUserDto
+  fullName: ATMApp.DTOs.CreateUserDto
+- uid: ATMApp.DTOs.UpdateUserDto
+  commentId: T:ATMApp.DTOs.UpdateUserDto
+  parent: ATMApp.DTOs
+  href: ATMApp.DTOs.UpdateUserDto.html
+  name: UpdateUserDto
+  nameWithType: UpdateUserDto
+  fullName: ATMApp.DTOs.UpdateUserDto
+- uid: ATMApp.DTOs.UserLoginDTO
+  commentId: T:ATMApp.DTOs.UserLoginDTO
+  parent: ATMApp.DTOs
+  href: ATMApp.DTOs.UserLoginDTO.html
+  name: UserLoginDTO
+  nameWithType: UserLoginDTO
+  fullName: ATMApp.DTOs.UserLoginDTO
+- uid: ATMApp.DTOs
+  commentId: N:ATMApp.DTOs
+  href: ATMApp.html
+  name: ATMApp.DTOs
+  nameWithType: ATMApp.DTOs
+  fullName: ATMApp.DTOs
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.DTOs
+    name: DTOs
+    href: ATMApp.DTOs.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.DTOs
+    name: DTOs
+    href: ATMApp.DTOs.html

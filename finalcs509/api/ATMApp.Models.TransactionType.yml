@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Models.TransactionType
+  commentId: T:ATMApp.Models.TransactionType
+  id: TransactionType
+  parent: ATMApp.Models
+  children:
+  - ATMApp.Models.TransactionType.Deposit
+  - ATMApp.Models.TransactionType.Display
+  - ATMApp.Models.TransactionType.Withdrawal
+  langs:
+  - csharp
+  - vb
+  name: TransactionType
+  nameWithType: TransactionType
+  fullName: ATMApp.Models.TransactionType
+  type: Enum
+  source:
+    remote:
+      path: Models/Transaction.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: TransactionType
+    path: ATM/Models/Transaction.cs
+    startLine: 23
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Models
+  syntax:
+    content: public enum TransactionType
+    content.vb: Public Enum TransactionType
+- uid: ATMApp.Models.TransactionType.Deposit
+  commentId: F:ATMApp.Models.TransactionType.Deposit
+  id: Deposit
+  parent: ATMApp.Models.TransactionType
+  langs:
+  - csharp
+  - vb
+  name: Deposit
+  nameWithType: TransactionType.Deposit
+  fullName: ATMApp.Models.TransactionType.Deposit
+  type: Field
+  source:
+    remote:
+      path: Models/Transaction.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Deposit
+    path: ATM/Models/Transaction.cs
+    startLine: 25
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Models
+  syntax:
+    content: Deposit = 0
+    return:
+      type: ATMApp.Models.TransactionType
+- uid: ATMApp.Models.TransactionType.Withdrawal
+  commentId: F:ATMApp.Models.TransactionType.Withdrawal
+  id: Withdrawal
+  parent: ATMApp.Models.TransactionType
+  langs:
+  - csharp
+  - vb
+  name: Withdrawal
+  nameWithType: TransactionType.Withdrawal
+  fullName: ATMApp.Models.TransactionType.Withdrawal
+  type: Field
+  source:
+    remote:
+      path: Models/Transaction.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Withdrawal
+    path: ATM/Models/Transaction.cs
+    startLine: 26
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Models
+  syntax:
+    content: Withdrawal = 1
+    return:
+      type: ATMApp.Models.TransactionType
+- uid: ATMApp.Models.TransactionType.Display
+  commentId: F:ATMApp.Models.TransactionType.Display
+  id: Display
+  parent: ATMApp.Models.TransactionType
+  langs:
+  - csharp
+  - vb
+  name: Display
+  nameWithType: TransactionType.Display
+  fullName: ATMApp.Models.TransactionType.Display
+  type: Field
+  source:
+    remote:
+      path: Models/Transaction.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Display
+    path: ATM/Models/Transaction.cs
+    startLine: 27
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Models
+  syntax:
+    content: Display = 2
+    return:
+      type: ATMApp.Models.TransactionType
+references:
+- uid: ATMApp.Models
+  commentId: N:ATMApp.Models
+  href: ATMApp.html
+  name: ATMApp.Models
+  nameWithType: ATMApp.Models
+  fullName: ATMApp.Models
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html
+- uid: ATMApp.Models.TransactionType
+  commentId: T:ATMApp.Models.TransactionType
+  parent: ATMApp.Models
+  href: ATMApp.Models.TransactionType.html
+  name: TransactionType
+  nameWithType: TransactionType
+  fullName: ATMApp.Models.TransactionType

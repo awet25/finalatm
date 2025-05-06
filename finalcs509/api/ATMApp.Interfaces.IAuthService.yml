@@ -1,0 +1,249 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Interfaces.IAuthService
+  commentId: T:ATMApp.Interfaces.IAuthService
+  id: IAuthService
+  parent: ATMApp.Interfaces
+  children:
+  - ATMApp.Interfaces.IAuthService.Exit
+  - ATMApp.Interfaces.IAuthService.Login(ATMApp.DTOs.UserLoginDTO)
+  langs:
+  - csharp
+  - vb
+  name: IAuthService
+  nameWithType: IAuthService
+  fullName: ATMApp.Interfaces.IAuthService
+  type: Interface
+  source:
+    remote:
+      path: Interfaces/IAuthService.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: IAuthService
+    path: ATM/Interfaces/IAuthService.cs
+    startLine: 9
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: public interface IAuthService
+    content.vb: Public Interface IAuthService
+- uid: ATMApp.Interfaces.IAuthService.Login(ATMApp.DTOs.UserLoginDTO)
+  commentId: M:ATMApp.Interfaces.IAuthService.Login(ATMApp.DTOs.UserLoginDTO)
+  id: Login(ATMApp.DTOs.UserLoginDTO)
+  parent: ATMApp.Interfaces.IAuthService
+  langs:
+  - csharp
+  - vb
+  name: Login(UserLoginDTO)
+  nameWithType: IAuthService.Login(UserLoginDTO)
+  fullName: ATMApp.Interfaces.IAuthService.Login(ATMApp.DTOs.UserLoginDTO)
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IAuthService.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Login
+    path: ATM/Interfaces/IAuthService.cs
+    startLine: 11
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: Task<User> Login(UserLoginDTO userLogin)
+    parameters:
+    - id: userLogin
+      type: ATMApp.DTOs.UserLoginDTO
+    return:
+      type: System.Threading.Tasks.Task{ATMApp.Models.User}
+    content.vb: Function Login(userLogin As UserLoginDTO) As Task(Of User)
+  overload: ATMApp.Interfaces.IAuthService.Login*
+- uid: ATMApp.Interfaces.IAuthService.Exit
+  commentId: M:ATMApp.Interfaces.IAuthService.Exit
+  id: Exit
+  parent: ATMApp.Interfaces.IAuthService
+  langs:
+  - csharp
+  - vb
+  name: Exit()
+  nameWithType: IAuthService.Exit()
+  fullName: ATMApp.Interfaces.IAuthService.Exit()
+  type: Method
+  source:
+    remote:
+      path: Interfaces/IAuthService.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: Exit
+    path: ATM/Interfaces/IAuthService.cs
+    startLine: 13
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Interfaces
+  syntax:
+    content: void Exit()
+    content.vb: Sub [Exit]()
+  overload: ATMApp.Interfaces.IAuthService.Exit*
+references:
+- uid: ATMApp.Interfaces
+  commentId: N:ATMApp.Interfaces
+  href: ATMApp.html
+  name: ATMApp.Interfaces
+  nameWithType: ATMApp.Interfaces
+  fullName: ATMApp.Interfaces
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Interfaces
+    name: Interfaces
+    href: ATMApp.Interfaces.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Interfaces
+    name: Interfaces
+    href: ATMApp.Interfaces.html
+- uid: ATMApp.Interfaces.IAuthService.Login*
+  commentId: Overload:ATMApp.Interfaces.IAuthService.Login
+  href: ATMApp.Interfaces.IAuthService.html#ATMApp_Interfaces_IAuthService_Login_ATMApp_DTOs_UserLoginDTO_
+  name: Login
+  nameWithType: IAuthService.Login
+  fullName: ATMApp.Interfaces.IAuthService.Login
+- uid: ATMApp.DTOs.UserLoginDTO
+  commentId: T:ATMApp.DTOs.UserLoginDTO
+  parent: ATMApp.DTOs
+  href: ATMApp.DTOs.UserLoginDTO.html
+  name: UserLoginDTO
+  nameWithType: UserLoginDTO
+  fullName: ATMApp.DTOs.UserLoginDTO
+- uid: System.Threading.Tasks.Task{ATMApp.Models.User}
+  commentId: T:System.Threading.Tasks.Task{ATMApp.Models.User}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<User>
+  nameWithType: Task<User>
+  fullName: System.Threading.Tasks.Task<ATMApp.Models.User>
+  nameWithType.vb: Task(Of User)
+  fullName.vb: System.Threading.Tasks.Task(Of ATMApp.Models.User)
+  name.vb: Task(Of User)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: ATMApp.Models.User
+    name: User
+    href: ATMApp.Models.User.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ATMApp.Models.User
+    name: User
+    href: ATMApp.Models.User.html
+  - name: )
+- uid: ATMApp.DTOs
+  commentId: N:ATMApp.DTOs
+  href: ATMApp.html
+  name: ATMApp.DTOs
+  nameWithType: ATMApp.DTOs
+  fullName: ATMApp.DTOs
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.DTOs
+    name: DTOs
+    href: ATMApp.DTOs.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.DTOs
+    name: DTOs
+    href: ATMApp.DTOs.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: ATMApp.Interfaces.IAuthService.Exit*
+  commentId: Overload:ATMApp.Interfaces.IAuthService.Exit
+  href: ATMApp.Interfaces.IAuthService.html#ATMApp_Interfaces_IAuthService_Exit
+  name: Exit
+  nameWithType: IAuthService.Exit
+  fullName: ATMApp.Interfaces.IAuthService.Exit

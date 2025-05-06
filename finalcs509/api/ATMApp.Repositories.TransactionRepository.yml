@@ -1,0 +1,702 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Repositories.TransactionRepository
+  commentId: T:ATMApp.Repositories.TransactionRepository
+  id: TransactionRepository
+  parent: ATMApp.Repositories
+  children:
+  - ATMApp.Repositories.TransactionRepository.#ctor(ATMApp.Data.ATMContext)
+  - ATMApp.Repositories.TransactionRepository.AddTransaction(ATMApp.Models.Transaction)
+  - ATMApp.Repositories.TransactionRepository.GetTransactionsByAccountId(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: TransactionRepository
+  nameWithType: TransactionRepository
+  fullName: ATMApp.Repositories.TransactionRepository
+  type: Class
+  source:
+    remote:
+      path: Repositories/TransactionRepository.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: TransactionRepository
+    path: ATM/Repositories/TransactionRepository.cs
+    startLine: 11
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  syntax:
+    content: 'public class TransactionRepository : ITransactionRepository'
+    content.vb: Public Class TransactionRepository Implements ITransactionRepository
+  inheritance:
+  - System.Object
+  implements:
+  - ATMApp.Interfaces.ITransactionRepository
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ATMApp.Repositories.TransactionRepository.#ctor(ATMApp.Data.ATMContext)
+  commentId: M:ATMApp.Repositories.TransactionRepository.#ctor(ATMApp.Data.ATMContext)
+  id: '#ctor(ATMApp.Data.ATMContext)'
+  parent: ATMApp.Repositories.TransactionRepository
+  langs:
+  - csharp
+  - vb
+  name: TransactionRepository(ATMContext)
+  nameWithType: TransactionRepository.TransactionRepository(ATMContext)
+  fullName: ATMApp.Repositories.TransactionRepository.TransactionRepository(ATMApp.Data.ATMContext)
+  type: Constructor
+  source:
+    remote:
+      path: Repositories/TransactionRepository.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: .ctor
+    path: ATM/Repositories/TransactionRepository.cs
+    startLine: 15
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  syntax:
+    content: public TransactionRepository(ATMContext context)
+    parameters:
+    - id: context
+      type: ATMApp.Data.ATMContext
+    content.vb: Public Sub New(context As ATMContext)
+  overload: ATMApp.Repositories.TransactionRepository.#ctor*
+  nameWithType.vb: TransactionRepository.New(ATMContext)
+  fullName.vb: ATMApp.Repositories.TransactionRepository.New(ATMApp.Data.ATMContext)
+  name.vb: New(ATMContext)
+- uid: ATMApp.Repositories.TransactionRepository.AddTransaction(ATMApp.Models.Transaction)
+  commentId: M:ATMApp.Repositories.TransactionRepository.AddTransaction(ATMApp.Models.Transaction)
+  id: AddTransaction(ATMApp.Models.Transaction)
+  parent: ATMApp.Repositories.TransactionRepository
+  langs:
+  - csharp
+  - vb
+  name: AddTransaction(Transaction)
+  nameWithType: TransactionRepository.AddTransaction(Transaction)
+  fullName: ATMApp.Repositories.TransactionRepository.AddTransaction(ATMApp.Models.Transaction)
+  type: Method
+  source:
+    remote:
+      path: Repositories/TransactionRepository.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: AddTransaction
+    path: ATM/Repositories/TransactionRepository.cs
+    startLine: 22
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  summary: This methode will add a transaction to an Account when ever the client draw or deposite money.
+  example: []
+  syntax:
+    content: public Task AddTransaction(Transaction transaction)
+    parameters:
+    - id: transaction
+      type: ATMApp.Models.Transaction
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function AddTransaction(transaction As Transaction) As Task
+  overload: ATMApp.Repositories.TransactionRepository.AddTransaction*
+  implements:
+  - ATMApp.Interfaces.ITransactionRepository.AddTransaction(ATMApp.Models.Transaction)
+- uid: ATMApp.Repositories.TransactionRepository.GetTransactionsByAccountId(System.Int32)
+  commentId: M:ATMApp.Repositories.TransactionRepository.GetTransactionsByAccountId(System.Int32)
+  id: GetTransactionsByAccountId(System.Int32)
+  parent: ATMApp.Repositories.TransactionRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTransactionsByAccountId(int)
+  nameWithType: TransactionRepository.GetTransactionsByAccountId(int)
+  fullName: ATMApp.Repositories.TransactionRepository.GetTransactionsByAccountId(int)
+  type: Method
+  source:
+    remote:
+      path: Repositories/TransactionRepository.cs
+      branch: main
+      repo: https://github.com/awet25/ATM.git
+    id: GetTransactionsByAccountId
+    path: ATM/Repositories/TransactionRepository.cs
+    startLine: 28
+  assemblies:
+  - ATMApp
+  namespace: ATMApp.Repositories
+  example: []
+  syntax:
+    content: public Task<List<Transaction>> GetTransactionsByAccountId(int accountId)
+    parameters:
+    - id: accountId
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{ATMApp.Models.Transaction}}
+    content.vb: Public Function GetTransactionsByAccountId(accountId As Integer) As Task(Of List(Of Transaction))
+  overload: ATMApp.Repositories.TransactionRepository.GetTransactionsByAccountId*
+  implements:
+  - ATMApp.Interfaces.ITransactionRepository.GetTransactionsByAccountId(System.Int32)
+  nameWithType.vb: TransactionRepository.GetTransactionsByAccountId(Integer)
+  fullName.vb: ATMApp.Repositories.TransactionRepository.GetTransactionsByAccountId(Integer)
+  name.vb: GetTransactionsByAccountId(Integer)
+references:
+- uid: ATMApp.Repositories
+  commentId: N:ATMApp.Repositories
+  href: ATMApp.html
+  name: ATMApp.Repositories
+  nameWithType: ATMApp.Repositories
+  fullName: ATMApp.Repositories
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Repositories
+    name: Repositories
+    href: ATMApp.Repositories.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Repositories
+    name: Repositories
+    href: ATMApp.Repositories.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ATMApp.Interfaces.ITransactionRepository
+  commentId: T:ATMApp.Interfaces.ITransactionRepository
+  parent: ATMApp.Interfaces
+  href: ATMApp.Interfaces.ITransactionRepository.html
+  name: ITransactionRepository
+  nameWithType: ITransactionRepository
+  fullName: ATMApp.Interfaces.ITransactionRepository
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ATMApp.Interfaces
+  commentId: N:ATMApp.Interfaces
+  href: ATMApp.html
+  name: ATMApp.Interfaces
+  nameWithType: ATMApp.Interfaces
+  fullName: ATMApp.Interfaces
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Interfaces
+    name: Interfaces
+    href: ATMApp.Interfaces.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Interfaces
+    name: Interfaces
+    href: ATMApp.Interfaces.html
+- uid: ATMApp.Repositories.TransactionRepository.#ctor*
+  commentId: Overload:ATMApp.Repositories.TransactionRepository.#ctor
+  href: ATMApp.Repositories.TransactionRepository.html#ATMApp_Repositories_TransactionRepository__ctor_ATMApp_Data_ATMContext_
+  name: TransactionRepository
+  nameWithType: TransactionRepository.TransactionRepository
+  fullName: ATMApp.Repositories.TransactionRepository.TransactionRepository
+  nameWithType.vb: TransactionRepository.New
+  fullName.vb: ATMApp.Repositories.TransactionRepository.New
+  name.vb: New
+- uid: ATMApp.Data.ATMContext
+  commentId: T:ATMApp.Data.ATMContext
+  parent: ATMApp.Data
+  href: ATMApp.Data.ATMContext.html
+  name: ATMContext
+  nameWithType: ATMContext
+  fullName: ATMApp.Data.ATMContext
+- uid: ATMApp.Data
+  commentId: N:ATMApp.Data
+  href: ATMApp.html
+  name: ATMApp.Data
+  nameWithType: ATMApp.Data
+  fullName: ATMApp.Data
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Data
+    name: Data
+    href: ATMApp.Data.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Data
+    name: Data
+    href: ATMApp.Data.html
+- uid: ATMApp.Repositories.TransactionRepository.AddTransaction*
+  commentId: Overload:ATMApp.Repositories.TransactionRepository.AddTransaction
+  href: ATMApp.Repositories.TransactionRepository.html#ATMApp_Repositories_TransactionRepository_AddTransaction_ATMApp_Models_Transaction_
+  name: AddTransaction
+  nameWithType: TransactionRepository.AddTransaction
+  fullName: ATMApp.Repositories.TransactionRepository.AddTransaction
+- uid: ATMApp.Interfaces.ITransactionRepository.AddTransaction(ATMApp.Models.Transaction)
+  commentId: M:ATMApp.Interfaces.ITransactionRepository.AddTransaction(ATMApp.Models.Transaction)
+  parent: ATMApp.Interfaces.ITransactionRepository
+  href: ATMApp.Interfaces.ITransactionRepository.html#ATMApp_Interfaces_ITransactionRepository_AddTransaction_ATMApp_Models_Transaction_
+  name: AddTransaction(Transaction)
+  nameWithType: ITransactionRepository.AddTransaction(Transaction)
+  fullName: ATMApp.Interfaces.ITransactionRepository.AddTransaction(ATMApp.Models.Transaction)
+  spec.csharp:
+  - uid: ATMApp.Interfaces.ITransactionRepository.AddTransaction(ATMApp.Models.Transaction)
+    name: AddTransaction
+    href: ATMApp.Interfaces.ITransactionRepository.html#ATMApp_Interfaces_ITransactionRepository_AddTransaction_ATMApp_Models_Transaction_
+  - name: (
+  - uid: ATMApp.Models.Transaction
+    name: Transaction
+    href: ATMApp.Models.Transaction.html
+  - name: )
+  spec.vb:
+  - uid: ATMApp.Interfaces.ITransactionRepository.AddTransaction(ATMApp.Models.Transaction)
+    name: AddTransaction
+    href: ATMApp.Interfaces.ITransactionRepository.html#ATMApp_Interfaces_ITransactionRepository_AddTransaction_ATMApp_Models_Transaction_
+  - name: (
+  - uid: ATMApp.Models.Transaction
+    name: Transaction
+    href: ATMApp.Models.Transaction.html
+  - name: )
+- uid: ATMApp.Models.Transaction
+  commentId: T:ATMApp.Models.Transaction
+  parent: ATMApp.Models
+  href: ATMApp.Models.Transaction.html
+  name: Transaction
+  nameWithType: Transaction
+  fullName: ATMApp.Models.Transaction
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: ATMApp.Models
+  commentId: N:ATMApp.Models
+  href: ATMApp.html
+  name: ATMApp.Models
+  nameWithType: ATMApp.Models
+  fullName: ATMApp.Models
+  spec.csharp:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html
+  spec.vb:
+  - uid: ATMApp
+    name: ATMApp
+    href: ATMApp.html
+  - name: .
+  - uid: ATMApp.Models
+    name: Models
+    href: ATMApp.Models.html
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: ATMApp.Repositories.TransactionRepository.GetTransactionsByAccountId*
+  commentId: Overload:ATMApp.Repositories.TransactionRepository.GetTransactionsByAccountId
+  href: ATMApp.Repositories.TransactionRepository.html#ATMApp_Repositories_TransactionRepository_GetTransactionsByAccountId_System_Int32_
+  name: GetTransactionsByAccountId
+  nameWithType: TransactionRepository.GetTransactionsByAccountId
+  fullName: ATMApp.Repositories.TransactionRepository.GetTransactionsByAccountId
+- uid: ATMApp.Interfaces.ITransactionRepository.GetTransactionsByAccountId(System.Int32)
+  commentId: M:ATMApp.Interfaces.ITransactionRepository.GetTransactionsByAccountId(System.Int32)
+  parent: ATMApp.Interfaces.ITransactionRepository
+  isExternal: true
+  href: ATMApp.Interfaces.ITransactionRepository.html#ATMApp_Interfaces_ITransactionRepository_GetTransactionsByAccountId_System_Int32_
+  name: GetTransactionsByAccountId(int)
+  nameWithType: ITransactionRepository.GetTransactionsByAccountId(int)
+  fullName: ATMApp.Interfaces.ITransactionRepository.GetTransactionsByAccountId(int)
+  nameWithType.vb: ITransactionRepository.GetTransactionsByAccountId(Integer)
+  fullName.vb: ATMApp.Interfaces.ITransactionRepository.GetTransactionsByAccountId(Integer)
+  name.vb: GetTransactionsByAccountId(Integer)
+  spec.csharp:
+  - uid: ATMApp.Interfaces.ITransactionRepository.GetTransactionsByAccountId(System.Int32)
+    name: GetTransactionsByAccountId
+    href: ATMApp.Interfaces.ITransactionRepository.html#ATMApp_Interfaces_ITransactionRepository_GetTransactionsByAccountId_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ATMApp.Interfaces.ITransactionRepository.GetTransactionsByAccountId(System.Int32)
+    name: GetTransactionsByAccountId
+    href: ATMApp.Interfaces.ITransactionRepository.html#ATMApp_Interfaces_ITransactionRepository_GetTransactionsByAccountId_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{ATMApp.Models.Transaction}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{ATMApp.Models.Transaction}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<Transaction>>
+  nameWithType: Task<List<Transaction>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<ATMApp.Models.Transaction>>
+  nameWithType.vb: Task(Of List(Of Transaction))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of ATMApp.Models.Transaction))
+  name.vb: Task(Of List(Of Transaction))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: ATMApp.Models.Transaction
+    name: Transaction
+    href: ATMApp.Models.Transaction.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ATMApp.Models.Transaction
+    name: Transaction
+    href: ATMApp.Models.Transaction.html
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )

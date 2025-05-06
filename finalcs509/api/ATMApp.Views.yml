@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATMApp.Views
+  commentId: N:ATMApp.Views
+  id: ATMApp.Views
+  children:
+  - ATMApp.Views.AdminView
+  - ATMApp.Views.ClientView
+  langs:
+  - csharp
+  - vb
+  name: ATMApp.Views
+  nameWithType: ATMApp.Views
+  fullName: ATMApp.Views
+  type: Namespace
+  assemblies:
+  - ATMApp
+references:
+- uid: ATMApp.Views.AdminView
+  commentId: T:ATMApp.Views.AdminView
+  href: ATMApp.Views.AdminView.html
+  name: AdminView
+  nameWithType: AdminView
+  fullName: ATMApp.Views.AdminView
+- uid: ATMApp.Views.ClientView
+  commentId: T:ATMApp.Views.ClientView
+  href: ATMApp.Views.ClientView.html
+  name: ClientView
+  nameWithType: ClientView
+  fullName: ATMApp.Views.ClientView

@@ -1,0 +1,25 @@
+image: Visual Studio 2022
+
+services:
+  - mysql
+
+environment:
+  MYSQL_USER: root
+  MYSQL_PWD: root
+  DOTNET_CLI_TELEMETRY_OPTOUT: 1
+
+init:
+  - SET PATH=C:\Program Files\MySQL\MySQL Server 8.0\bin;%PATH%
+
+before_build:
+  - dotnet restore
+
+before_test:
+  - mysql -u root -proot -e "CREATE DATABASE IF NOT EXISTS atm_test;"
+  - dotnet ef database update --project ATMApp/ATMApp.csproj --context ATMContext
+
+build_script:
+  - dotnet build ATMApp.sln
+
+test_script:
+  - dotnet test ATMApp.Tests/ATMApp.Tests.csproj --logger:trx
