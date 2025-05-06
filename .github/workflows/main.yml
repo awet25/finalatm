@@ -1,0 +1,44 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-test-doc:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.x'  # or 9.x if you're on .NET 9
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Run StyleCopAnalyzers
+      run: dotnet build --no-restore /warnaserror
+
+    - name: Build Debug
+      run: dotnet build --configuration Debug --no-restore
+
+    - name: Build Release
+      run: dotnet build --configuration Release --no-restore
+
+    - name: Run Tests
+      run: dotnet test --no-build --verbosity normal --logger "trx;LogFileName=test_results.trx"
+
+    - name: Generate Documentation
+      run: docfx docfx.json
+
+    - name: Upload Docs Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: atm-docs
+        path: _site
